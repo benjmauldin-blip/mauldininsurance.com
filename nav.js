@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
           </ul>
         </li>
         <li><a href="/service-areas" class="nav-link">Service Areas</a></li>
-        <li><a href="https://southcarolinamedicareagency.com" class="nav-link" target="_blank">Medicare Site</a></li>
+        <li><a href="https://www.southcarolinamedicareagency.com" class="nav-link" target="_blank">Medicare Site</a></li>
         <li><a href="https://www.mauldininsurancegroup.com" class="nav-link" target="_blank">MIG Website</a></li>
       </ul>
 
