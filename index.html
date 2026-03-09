@@ -10,19 +10,68 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",h
-  "@type": "InsuranceAgency",
-  "name": "Mauldin Insurance Group",
-  "url": "https://mauldininsurance.com",
-  "telephone": "+18039208827",
-  "email": "ben@mauldininsurancegroup.com",
-  "address": {"@type":"PostalAddress","streetAddress":"100 Old Cherokee Rd STE F #167","addressLocality":"Lexington","addressRegion":"SC","postalCode":"29072","addressCountry":"US"},
-  "areaServed": "South Carolina",
-  "serviceType": ["Auto Insurance","Home Insurance","Renters Insurance","Business Insurance","Life Insurance","Medicare Insurance"]
-}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "InsuranceAgency",
+    "@id": "https://mauldininsurance.com/#organization",
+    "name": "Mauldin Insurance Group",
+    "url": "https://mauldininsurance.com",
+    "logo": "https://irp.cdn-website.com/ed566c5d/dms3rep/multi/favicon.png",
+    "image": "https://irp.cdn-website.com/ed566c5d/dms3rep/multi/favicon.png",
+    "description": "Mauldin Insurance Group is an independent insurance agency based in Lexington, SC serving all of South Carolina. We shop multiple carriers to find the best auto, home, renters, business, and life insurance at no cost to you.",
+    "foundingDate": "2021",
+    "telephone": "+18039208827",
+    "email": "ben@mauldininsurancegroup.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "100 Old Cherokee Rd STE F #167",
+      "addressLocality": "Lexington",
+      "addressRegion": "SC",
+      "postalCode": "29072",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.0033,
+      "longitude": -81.1957
+    },
+    "areaServed": [{ "@type": "State", "name": "South Carolina" }],
+    "founder": [
+      { "@type": "Person", "name": "Jennifer Mauldin" },
+      { "@type": "Person", "name": "Benjamin Mauldin" }
+    ],
+    "employee": {
+      "@type": "Person",
+      "name": "Benjamin Mauldin",
+      "telephone": "+18039208827",
+      "email": "ben@mauldininsurancegroup.com"
+    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+18039208827",
+        "contactType": "customer service",
+        "name": "Benjamin Mauldin",
+        "areaServed": "US",
+        "availableLanguage": ["English"]
+      }
+    ],
+    "serviceType": ["Auto Insurance", "Home Insurance", "Renters Insurance", "Business Insurance", "Life Insurance", "Medicare Insurance"],
+    "sameAs": [
+      "https://www.mauldininsurancegroup.com",
+      "https://www.southcarolinamedicareagency.com",
+      "https://www.facebook.com/mauldininsurancegroup",
+      "https://www.google.com/maps?cid=14600299182979997294"
+    ],
+    "parentOrganization": {
+      "@type": "Organization",
+      "@id": "https://www.mauldininsurancegroup.com/#organization",
+      "name": "Mauldin Insurance Group",
+      "url": "https://www.mauldininsurancegroup.com"
+    }
+  }
 </script>
-<style>
-:root{--navy:#1a2e5a;--navy-dark:#111f3e;--gold:#c9a227;--gold-light:#e0b93a;--white:#fff;--off-white:#f5f5f3;--gray-light:#e8e8e4;--text-dark:#1a1a1a;--text-mid:#444}
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Lato',sans-serif;color:var(--text-dark);background:var(--white)}
 .top-bar{background:#111;color:#fff;text-align:center;padding:8px 20px;font-size:13px}
