@@ -10,68 +10,78 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "InsuranceAgency",
-    "@id": "https://mauldininsurance.com/#organization",
-    "name": "Mauldin Insurance Group",
-    "url": "https://mauldininsurance.com",
-    "logo": "https://irp.cdn-website.com/ed566c5d/dms3rep/multi/favicon.png",
-    "image": "https://irp.cdn-website.com/ed566c5d/dms3rep/multi/favicon.png",
-    "description": "Mauldin Insurance Group is an independent insurance agency based in Lexington, SC serving all of South Carolina. We shop multiple carriers to find the best auto, home, renters, business, and life insurance at no cost to you.",
-    "foundingDate": "2021",
+  "@context": "https://schema.org",
+  "@type": "InsuranceAgency",
+  "@id": "https://mauldininsurance.com/#organization",
+  "name": "Mauldin Insurance Group",
+  "url": "https://mauldininsurance.com",
+  "logo": "https://irp.cdn-website.com/ed566c5d/dms3rep/multi/favicon.png",
+  "image": "https://irp.cdn-website.com/ed566c5d/dms3rep/multi/favicon.png",
+  "description": "Mauldin Insurance Group is an independent insurance agency based in Lexington, SC serving all of South Carolina. We shop multiple carriers to find the best auto, home, renters, business, and life insurance at no cost to you.",
+  "foundingDate": "2021",
+  "telephone": "+18039208827",
+  "email": "ben@mauldininsurancegroup.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "100 Old Cherokee Rd STE F #167",
+    "addressLocality": "Lexington",
+    "addressRegion": "SC",
+    "postalCode": "29072",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.0033,
+    "longitude": -81.1957
+  },
+  "areaServed": [{ "@type": "State", "name": "South Carolina" }],
+  "founder": [
+    { "@type": "Person", "name": "Jennifer Mauldin" },
+    { "@type": "Person", "name": "Benjamin Mauldin" }
+  ],
+  "employee": {
+    "@type": "Person",
+    "name": "Benjamin Mauldin",
     "telephone": "+18039208827",
-    "email": "ben@mauldininsurancegroup.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "100 Old Cherokee Rd STE F #167",
-      "addressLocality": "Lexington",
-      "addressRegion": "SC",
-      "postalCode": "29072",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 34.0033,
-      "longitude": -81.1957
-    },
-    "areaServed": [{ "@type": "State", "name": "South Carolina" }],
-    "founder": [
-      { "@type": "Person", "name": "Jennifer Mauldin" },
-      { "@type": "Person", "name": "Benjamin Mauldin" }
-    ],
-    "employee": {
-      "@type": "Person",
-      "name": "Benjamin Mauldin",
+    "email": "ben@mauldininsurancegroup.com"
+  },
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
       "telephone": "+18039208827",
-      "email": "ben@mauldininsurancegroup.com"
-    },
-    "contactPoint": [
-      {
-        "@type": "ContactPoint",
-        "telephone": "+18039208827",
-        "contactType": "customer service",
-        "name": "Benjamin Mauldin",
-        "areaServed": "US",
-        "availableLanguage": ["English"]
-      }
-    ],
-    "serviceType": ["Auto Insurance", "Home Insurance", "Renters Insurance", "Business Insurance", "Life Insurance", "Medicare Insurance"],
-    "sameAs": [
-      "https://www.mauldininsurancegroup.com",
-      "https://www.southcarolinamedicareagency.com",
-      "https://www.facebook.com/mauldininsurancegroup",
-      "https://www.google.com/maps?cid=14600299182979997294"
-    ],
-    "parentOrganization": {
-      "@type": "Organization",
-      "@id": "https://www.mauldininsurancegroup.com/#organization",
-      "name": "Mauldin Insurance Group",
-      "url": "https://www.mauldininsurancegroup.com"
+      "contactType": "customer service",
+      "name": "Benjamin Mauldin",
+      "areaServed": "US",
+      "availableLanguage": ["English"]
     }
+  ],
+  "serviceType": ["Auto Insurance", "Home Insurance", "Renters Insurance", "Business Insurance", "Life Insurance", "Medicare Insurance"],
+  "sameAs": [
+    "https://www.mauldininsurancegroup.com",
+    "https://www.southcarolinamedicareagency.com",
+    "https://www.facebook.com/mauldininsurancegroup",
+    "https://www.google.com/maps?cid=14600299182979997294"
+  ],
+  "parentOrganization": {
+    "@type": "Organization",
+    "@id": "https://www.mauldininsurancegroup.com/#organization",
+    "name": "Mauldin Insurance Group",
+    "url": "https://www.mauldininsurancegroup.com"
   }
+}
 </script>
+<style>
+:root {
+  --navy: #1a2e5a;
+  --navy-dark: #111f3e;
+  --gold: #c9a227;
+  --gold-light: #e0b93a;
+  --white: #ffffff;
+  --off-white: #f5f5f3;
+  --gray-light: #e8e8e4;
+  --text-dark: #1a1a1a;
+  --text-mid: #444;
+}
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Lato',sans-serif;color:var(--text-dark);background:var(--white)}
 .top-bar{background:#111;color:#fff;text-align:center;padding:8px 20px;font-size:13px}
@@ -91,11 +101,12 @@ nav{background:linear-gradient(135deg,var(--navy-dark) 0%,var(--navy) 60%,#2a4a7
 .nav-submenu{display:none;position:absolute;top:100%;left:0;background:var(--navy-dark);border:1px solid rgba(201,162,39,.3);border-radius:6px;list-style:none;padding:6px 0;min-width:200px;box-shadow:0 8px 24px rgba(0,0,0,.3);z-index:100}
 .nav-dropdown:hover .nav-submenu{display:block}
 .nav-submenu li a{display:block;padding:9px 18px;color:rgba(255,255,255,.88);font-size:13px}
-.nav-cta{background:var(--gold);color:var(--navy-dark)!important;font-weight:700!important;padding:8px 18px!important;border-radius:4px!important;margin-left:8px;border:2px solid var(--gold)!important}.nav-cta{background:var(--gold);color:var(--navy-dark)!important;font-weight:700!important;padding:8px 16px!important;border-radius:4px!important;margin-left:8px}
-.nav-cta{background:#c9a227!important;color:#111f3e!important;font-weight:700!important;padding:8px 18px!important;border-radius:4px!important;margin-left:8px;border:none!important;display:inline-block}.nav-phone{color:var(--gold-light)!important;font-weight:700!important}
+.nav-cta{background:#c9a227!important;color:#111f3e!important;font-weight:700!important;padding:8px 18px!important;border-radius:4px!important;margin-left:8px;border:none!important;display:inline-block!important}
+.nav-cta:hover{background:#e0b93a!important;color:#000!important}
+.nav-phone{color:var(--gold-light)!important;font-weight:700!important}
 .nav-hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;margin-left:auto}
 .nav-hamburger span{display:block;width:24px;height:2px;background:white;border-radius:2px}
-@media(max-width:900px){nav{padding:0 20px}.nav-hamburger{display:flex}.nav-links{display:none;flex-direction:column;position:absolute;top:68px;left:0;right:0;background:var(--navy-dark);padding:12px 0 20px;border-top:1px solid rgba(201,162,39,.3);margin:0;gap:0;z-index:999}.nav-links.open{display:flex}.nav-links li{width:100%}.nav-links a,.nav-drop-btn{width:100%;text-align:left;padding:12px 24px;font-size:15px}.nav-submenu{position:static;box-shadow:none;border:none;border-left:3px solid var(--gold);margin-left:20px;border-radius:0;background:rgba(0,0,0,.2)}.nav-dropdown:hover .nav-submenu{display:none}.nav-dropdown.open .nav-submenu{display:block}.nav-cta{margin-left:0}}
+@media(max-width:900px){nav{padding:0 20px}.nav-hamburger{display:flex}.nav-links{display:none;flex-direction:column;position:absolute;top:68px;left:0;right:0;background:var(--navy-dark);padding:12px 0 20px;border-top:1px solid rgba(201,162,39,.3);margin:0;gap:0;z-index:999}.nav-links.open{display:flex}.nav-links li{width:100%}.nav-links a,.nav-drop-btn{width:100%;text-align:left;padding:12px 24px;font-size:15px}.nav-submenu{position:static;box-shadow:none;border:none;border-left:3px solid var(--gold);margin-left:20px;border-radius:0;background:rgba(0,0,0,.2)}.nav-dropdown:hover .nav-submenu{display:none}.nav-dropdown.open .nav-submenu{display:block}.nav-cta{margin-left:0!important}}
 .hero{background:linear-gradient(135deg,#0d1e3f 0%,var(--navy) 50%,#1e3a6e 100%);color:white;padding:80px 20px 70px;text-align:center;position:relative;overflow:hidden}
 .hero-inner{position:relative;max-width:800px;margin:0 auto}
 .hero-badge{display:inline-block;background:rgba(201,162,39,.2);border:1px solid rgba(201,162,39,.5);color:var(--gold);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:6px 16px;border-radius:20px;margin-bottom:20px}
@@ -337,7 +348,7 @@ footer{background:#0d1e3f;color:rgba(255,255,255,.75);padding:50px 20px 24px}
   </div>
   <hr class="footer-divider">
   <div class="footer-bottom">
-    <p>Mauldin Insurance Group is an independent insurance agency licensed in South Carolina. We represent multiple insurance carriers and work to find the best coverage options for our clients. Coverage availability and pricing vary by carrier, location, and individual circumstances. This site is for informational purposes only and does not constitute a binding quote or offer of insurance.</p>
+    <p>Mauldin Insurance Group is an independent insurance agency licensed in South Carolina. We represent multiple insurance carriers and work to find the best coverage options for our clients. Coverage availability and pricing vary by carrier, location, and individual circumstances.</p>
     <p class="footer-copy">© 2026 Mauldin Insurance Group. All rights reserved. | Lexington, SC | Serving All of South Carolina</p>
   </div>
 </footer>
