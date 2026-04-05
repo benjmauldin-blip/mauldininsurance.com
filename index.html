@@ -12,76 +12,119 @@
 {
   "@context": "https://schema.org",
   "@type": "InsuranceAgency",
-  "@id": "https://mauldininsurance.com/#organization",
+  "@id": "https://www.mauldininsurance.com/#organization",
   "name": "Mauldin Insurance Group",
-  "url": "https://mauldininsurance.com",
+  "makesOffer": [
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Auto Insurance", "serviceType": "Personal Auto Insurance"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Home Insurance", "serviceType": "Homeowners Insurance"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Renters Insurance", "serviceType": "Renters Insurance"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Business Insurance", "serviceType": "Commercial Insurance"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Life Insurance", "serviceType": "Life Insurance"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Final Expense Insurance", "serviceType": "Final Expense Insurance"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Auto & Home Bundle", "serviceType": "Multi-Policy Insurance"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Commercial Auto Insurance", "serviceType": "Commercial Auto Insurance"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Umbrella Insurance", "serviceType": "Umbrella Liability Insurance"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Medicare Insurance", "serviceType": "Medicare Insurance"}}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://www.mauldininsurance.com/#organization",
+  "name": "Mauldin Insurance Group",
+  "url": "https://www.mauldininsurance.com",
   "logo": "https://irp.cdn-website.com/ed566c5d/dms3rep/multi/favicon.png",
-  "image": "https://irp.cdn-website.com/ed566c5d/dms3rep/multi/favicon.png",
-  "description": "Mauldin Insurance Group is an independent insurance agency based in Lexington, SC serving all of South Carolina. We shop multiple carriers to find the best auto, home, renters, business, and life insurance at no cost to you.",
+  "description": "Independent insurance agency in Lexington SC specializing in auto, home, life, renters, and business insurance for South Carolina families and businesses.",
+  "founder": [
+    {"@type": "Person", "name": "Jennifer Mauldin"},
+    {"@type": "Person", "name": "Benjamin Mauldin"}
+  ],
   "foundingDate": "2021",
-  "telephone": "+18039208827",
-  "email": "ben@mauldininsurancegroup.com",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "126",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "100 Old Cherokee Rd STE F #167",
+    "streetAddress": "100 Old Cherokee Rd Ste F #167",
     "addressLocality": "Lexington",
     "addressRegion": "SC",
     "postalCode": "29072",
     "addressCountry": "US"
   },
-  "geo": { "@type": "GeoCoordinates", "latitude": 34.0033, "longitude": -81.1957 },
-  "areaServed": [{ "@type": "State", "name": "South Carolina" }],
-  "founder": [
-    { "@type": "Person", "name": "Jennifer Mauldin" },
-    { "@type": "Person", "name": "Benjamin Mauldin" }
-  ],
-  "employee": {
-    "@type": "Person",
-    "name": "Benjamin Mauldin",
-    "telephone": "+18039208827",
-    "email": "ben@mauldininsurancegroup.com"
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.0033,
+    "longitude": -81.1957
   },
-  "contactPoint": [{
-    "@type": "ContactPoint",
-    "telephone": "+18039208827",
-    "contactType": "customer service",
-    "name": "Benjamin Mauldin",
-    "areaServed": "US",
-    "availableLanguage": ["English"]
-  }],
-  "serviceType": ["Auto Insurance", "Home Insurance", "Renters Insurance", "Business Insurance", "Life Insurance", "Medicare Insurance"],
+  "telephone": "+1-803-920-8827",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    }
+  ],
+  "priceRange": "$$",
+  "areaServed": [
+    {"@type": "State", "name": "South Carolina"},
+    {"@type": "State", "name": "North Carolina"},
+    {"@type": "State", "name": "Georgia"}
+  ],
   "sameAs": [
+    "https://www.google.com/maps?cid=14600299182979997294",
+    "https://www.facebook.com/mauldininsurancegroup",
     "https://www.mauldininsurancegroup.com",
     "https://www.southcarolinamedicareagency.com",
-    "https://www.midlandsmedicare.com",
-    "https://www.facebook.com/mauldininsurancegroup",
-    "https://www.google.com/maps?cid=14600299182979997294"
-  ],
-  "parentOrganization": {
-    "@type": "Organization",
-    "@id": "https://www.mauldininsurancegroup.com/#organization",
-    "name": "Mauldin Insurance Group",
-    "url": "https://www.mauldininsurancegroup.com"
-  }
+    "https://www.midlandsmedicare.com"
+  ]
 }
 </script>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    { "@type": "Question", "name": "What does it mean to be an independent insurance agent?", "acceptedAnswer": { "@type": "Answer", "text": "An independent agent like Mauldin Insurance Group is not employed by any single insurance company. We represent multiple carriers, which means we can compare options across several insurers to find you the best combination of coverage and price. A captive agent — like a State Farm or Allstate agent — can only offer products from their one company." } },
-    { "@type": "Question", "name": "Does it cost more to use an independent agent?", "acceptedAnswer": { "@type": "Answer", "text": "No — our services are completely free to you. Insurance carriers pay agents a commission when you purchase a policy. Your premium is the same whether you buy through us or go directly to the carrier. The difference is that we do the shopping and comparison work for you at no charge." } },
-    { "@type": "Question", "name": "What insurance carriers do you work with?", "acceptedAnswer": { "@type": "Answer", "text": "We work with multiple top-rated carriers across auto, home, renters, business, and life insurance. The specific carriers available depend on the type of insurance and your location in South Carolina. Call us at 803-920-8827 and we can tell you exactly which carriers we can shop for your specific situation." } },
-    { "@type": "Question", "name": "Do you only serve Lexington, or all of South Carolina?", "acceptedAnswer": { "@type": "Answer", "text": "We serve clients across all of South Carolina. While we are based in Lexington and do a lot of business in the Midlands — Lexington, Columbia, Irmo, Chapin, West Columbia — we help clients statewide by phone and video. Distance is no issue and there is no extra cost for clients outside Lexington." } },
-    { "@type": "Question", "name": "Can you bundle multiple policies together?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, and bundling is one of the best ways to save. Many carriers offer significant discounts when you combine auto and home insurance, for example. We will look at your full picture and find the best bundling options available to you." } },
-    { "@type": "Question", "name": "How much does car insurance cost in South Carolina?", "acceptedAnswer": { "@type": "Answer", "text": "Auto insurance rates in South Carolina vary based on your driving record, vehicle, age, location, and the coverage levels you choose. South Carolina requires minimum liability coverage of 25/50/25, but most drivers benefit from carrying higher limits plus comprehensive and collision. As an independent agent, we compare rates across multiple carriers to find you the most competitive premium for the coverage you actually need." } },
-    { "@type": "Question", "name": "What does homeowners insurance cover in South Carolina?", "acceptedAnswer": { "@type": "Answer", "text": "A standard homeowners policy covers your dwelling (the structure), other structures on your property, personal belongings, loss of use if your home becomes uninhabitable, personal liability, and medical payments to guests. Important exclusions in South Carolina include flood damage and earthquake damage, which require separate policies. We review your coverage limits every year to make sure you are not underinsured." } },
-    { "@type": "Question", "name": "Do I need renters insurance in South Carolina?", "acceptedAnswer": { "@type": "Answer", "text": "Your landlord's insurance policy covers the building — it does not cover your personal belongings, your liability, or your living expenses if the unit becomes uninhabitable. Renters insurance fills that gap and typically costs just $15 to $30 per month. It is one of the most affordable and overlooked types of coverage, and we can often add it to an existing auto policy for a minimal premium increase." } },
-    { "@type": "Question", "name": "What business insurance do I need in South Carolina?", "acceptedAnswer": { "@type": "Answer", "text": "The right business insurance depends on your industry, size, and operations. Most South Carolina businesses start with a Business Owners Policy (BOP), which bundles general liability and commercial property coverage. From there, you may need commercial auto, workers compensation, professional liability, or umbrella coverage depending on your risk exposure. We work with business owners across the Midlands to build the right coverage package." } },
-    { "@type": "Question", "name": "How do I know if I have enough home insurance coverage?", "acceptedAnswer": { "@type": "Answer", "text": "Your dwelling coverage limit should reflect the cost to rebuild your home from the ground up at today's construction costs — not its market value. Many South Carolina homeowners are significantly underinsured because building costs have risen sharply in recent years. We offer free policy reviews and can help you determine whether your current limits are adequate before you ever need to file a claim." } },
-    { "@type": "Question", "name": "What is the difference between full coverage and liability car insurance?", "acceptedAnswer": { "@type": "Answer", "text": "Liability insurance covers damage and injuries you cause to others in an accident — it is the minimum required by South Carolina law. Full coverage typically adds collision (damage to your own vehicle in an accident) and comprehensive (theft, weather, falling objects, animal strikes). Whether full coverage is worth it depends on your vehicle value, loan status, and financial situation. We help you make that decision based on your specific circumstances." } },
-    { "@type": "Question", "name": "How do I switch insurance agents in South Carolina?", "acceptedAnswer": { "@type": "Answer", "text": "Switching is easier than most people think. You can change agents or carriers at any time — you are not locked in until renewal. We handle all the paperwork, contact your current carrier on your behalf, and make sure there is no gap in coverage during the transition. Most switches are completed within a few business days. Call us at 803-920-8827 and we will walk you through the process at no cost." } }
+  "@type": "WebSite",
+  "name": "Mauldin Insurance",
+  "@id": "https://www.mauldininsurance.com/#website",
+  "url": "https://www.mauldininsurance.com",
+  "description": "Independent insurance agency in Lexington SC for auto, home, life, renters, and business insurance across South Carolina, North Carolina, and Georgia.",
+  "publisher": {"@id": "https://www.mauldininsurance.com/#organization"},
+  "inLanguage": "en"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "name": "Ben Mauldin",
+      "jobTitle": "Independent Insurance Agent",
+      "worksFor": {"@id": "https://www.mauldininsurance.com/#organization"},
+      "telephone": "+1-803-920-8827",
+      "email": "ben@mauldininsurancegroup.com",
+      "url": "https://www.mauldininsurancegroup.com/about",
+      "sameAs": ["https://www.linkedin.com/in/ben-mauldin/"]
+    },
+    {
+      "@type": "Person",
+      "name": "Jennifer Mauldin",
+      "jobTitle": "Medicare & Health Insurance Specialist",
+      "worksFor": {"@id": "https://www.mauldininsurance.com/#organization"},
+      "telephone": "+1-843-509-2462",
+      "email": "jennifer@mauldininsurancegroup.com",
+      "url": "https://www.mauldininsurancegroup.com/about",
+      "sameAs": ["https://www.linkedin.com/in/jennifer-williams-mauldin-58133029/"]
+    }
   ]
 }
 </script>
