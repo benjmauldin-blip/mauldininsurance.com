@@ -3,44 +3,46 @@
 
 document.addEventListener('DOMContentLoaded', function () {
   const navHTML = `
-  <nav class="site-nav" id="site-nav">
-    <div class="nav-inner">
-      <a href="/" class="nav-logo">
-        <img src="https://irp.cdn-website.com/ed566c5d/dms3rep/multi/favicon.png" alt="Mauldin Insurance Group" class="nav-logo-img" />
-        <div class="nav-logo-text">
-          <span class="nav-logo-top">Mauldin Insurance Group</span>
-          <span class="nav-logo-sub">Lexington, SC Independent Agent</span>
-        </div>
-      </a>
-
-      <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-
-      <ul class="nav-links" id="nav-links">
-        <li class="nav-dropdown">
-          <button class="nav-link nav-drop-btn">Personal <span class="nav-arrow">&#9662;</span></button>
-          <ul class="nav-submenu">
-            <li><a href="/auto-insurance-south-carolina">Auto Insurance</a></li>
-            <li><a href="/home-insurance-south-carolina">Home Insurance</a></li>
-            <li><a href="/renters-insurance-south-carolina">Renters Insurance</a></li>
-            <li><a href="/life-insurance-south-carolina">Life Insurance</a></li>
-          </ul>
-        </li>
-        <li class="nav-dropdown">
-          <button class="nav-link nav-drop-btn">Business <span class="nav-arrow">&#9662;</span></button>
-          <ul class="nav-submenu">
-            <li><a href="/business-insurance-south-carolina">Business Insurance</a></li>
-          </ul>
-        </li>
-        <li><a href="/service-areas" class="nav-link">Service Areas</a></li>
-        <li><a href="https://www.southcarolinamedicareagency.com" class="nav-link" target="_blank">Medicare Site</a></li>
-        <li><a href="https://www.mauldininsurancegroup.com" class="nav-link" target="_blank">MIG Website</a></li>
-        <li><a href="tel:8039208827" class="nav-link nav-phone">803-920-8827</a></li>
-        <li><a href="https://www.mauldininsurancegroup.com/contact" class="nav-link nav-cta">Free Quote</a></li>
-      </ul>
-    </div>
-  </nav>
+    <nav class="site-nav" id="site-nav">
+      <div class="nav-inner">
+        <a href="/" class="nav-logo">
+          <img src="https://irp.cdn-website.com/ed566c5d/dms3rep/multi/favicon.png" alt="Mauldin Insurance Group" class="nav-logo-img" />
+          <div class="nav-logo-text">
+            <span class="nav-logo-top">Mauldin Insurance Group</span>
+            <span class="nav-logo-sub">Lexington, SC Independent Agent</span>
+          </div>
+        </a>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li class="nav-dropdown">
+            <button class="nav-link nav-drop-btn">Personal <span class="nav-arrow">&#9662;</span></button>
+            <ul class="nav-submenu">
+              <li><a href="/auto-insurance-south-carolina">🚗 Auto Insurance</a></li>
+              <li><a href="/home-insurance-south-carolina">🏠 Home Insurance</a></li>
+              <li><a href="/homeowners-insurance-lexington-sc">📍 Homeowners — Lexington SC</a></li>
+              <li><a href="/renters-insurance-south-carolina">🏘️ Renters Insurance</a></li>
+              <li><a href="/renters-insurance-lexington-sc">📍 Renters — Lexington SC</a></li>
+              <li><a href="/life-insurance-south-carolina">💛 Life Insurance</a></li>
+              <li><a href="/boat-insurance-lake-murray-sc">⛵ Boat — Lake Murray</a></li>
+            </ul>
+          </li>
+          <li class="nav-dropdown">
+            <button class="nav-link nav-drop-btn">Business <span class="nav-arrow">&#9662;</span></button>
+            <ul class="nav-submenu">
+              <li><a href="/business-insurance-south-carolina">💼 Business Insurance</a></li>
+              <li><a href="/landlord-insurance-south-carolina">🏘️ Landlord Insurance</a></li>
+            </ul>
+          </li>
+          <li><a href="/service-areas" class="nav-link">Service Areas</a></li>
+          <li><a href="https://www.southcarolinamedicareagency.com" class="nav-link" target="_blank">Medicare Site</a></li>
+          <li><a href="https://www.mauldininsurancegroup.com" class="nav-link" target="_blank">MIG Website</a></li>
+          <li><a href="tel:8039208827" class="nav-link nav-phone">803-920-8827</a></li>
+          <li><a href="https://www.mauldininsurancegroup.com/contact" class="nav-link nav-cta">Free Quote</a></li>
+        </ul>
+      </div>
+    </nav>
   `;
 
   const style = `
@@ -68,32 +70,10 @@ document.addEventListener('DOMContentLoaded', function () {
         text-decoration: none;
         flex-shrink: 0;
       }
-      .nav-logo-img {
-        height: 44px;
-        width: auto;
-        object-fit: contain;
-      }
-      .nav-logo-top {
-        color: #fff;
-        font-size: 14px;
-        font-weight: 700;
-        display: block;
-      }
-      .nav-logo-sub {
-        color: #c9a227;
-        font-size: 10px;
-        font-weight: 300;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        display: block;
-      }
-      .nav-links {
-        display: flex;
-        list-style: none;
-        margin-left: auto;
-        gap: 2px;
-        align-items: center;
-      }
+      .nav-logo-img { height: 44px; width: auto; object-fit: contain; }
+      .nav-logo-top { color: #fff; font-size: 14px; font-weight: 700; display: block; }
+      .nav-logo-sub { color: #c9a227; font-size: 10px; font-weight: 300; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+      .nav-links { display: flex; list-style: none; margin-left: auto; gap: 2px; align-items: center; }
       .nav-links li { position: relative; }
       .nav-link {
         color: rgba(255,255,255,0.9);
@@ -132,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
         border-radius: 6px;
         list-style: none;
         padding: 6px 0;
-        min-width: 200px;
+        min-width: 220px;
         box-shadow: 0 8px 24px rgba(0,0,0,0.3);
         z-index: 100;
       }
@@ -146,34 +126,14 @@ document.addEventListener('DOMContentLoaded', function () {
         white-space: nowrap;
       }
       .nav-submenu li a:hover { background: rgba(201,162,39,0.15); color: #e0b93a; }
-      .nav-hamburger {
-        display: none;
-        flex-direction: column;
-        gap: 5px;
-        background: none;
-        border: none;
-        cursor: pointer;
-        padding: 8px;
-        margin-left: auto;
-      }
+      .nav-submenu .nav-local-link { color: rgba(201,162,39,0.8) !important; font-size: 12px !important; padding-left: 26px !important; }
+      .nav-submenu .nav-local-link:hover { color: #e0b93a !important; }
+      .nav-hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 8px; margin-left: auto; }
       .nav-hamburger span { display: block; width: 24px; height: 2px; background: white; border-radius: 2px; }
       @media (max-width: 900px) {
         .site-nav { padding: 0 20px; }
         .nav-hamburger { display: flex; }
-        .nav-links {
-          display: none;
-          flex-direction: column;
-          position: absolute;
-          top: 68px;
-          left: 0;
-          right: 0;
-          background: #111f3e;
-          padding: 12px 0 20px;
-          border-top: 1px solid rgba(201,162,39,0.3);
-          margin: 0;
-          gap: 0;
-          z-index: 999;
-        }
+        .nav-links { display: none; flex-direction: column; position: absolute; top: 68px; left: 0; right: 0; background: #111f3e; padding: 12px 0 20px; border-top: 1px solid rgba(201,162,39,0.3); margin: 0; gap: 0; z-index: 999; }
         .nav-links.open { display: flex; }
         .nav-links li { width: 100%; }
         .nav-link { width: 100%; text-align: left; padding: 12px 24px; font-size: 15px; }
