@@ -2,6 +2,7 @@
 // Central Footer — edit this file to update ALL pages at once
 
 document.addEventListener('DOMContentLoaded', function () {
+
   const footerHTML = `
   <footer class="site-footer">
     <div class="footer-inner">
@@ -15,8 +16,12 @@ document.addEventListener('DOMContentLoaded', function () {
             </div>
           </div>
           <p class="footer-tagline">Independent insurance agent serving all of South Carolina. Based in Lexington, SC. We shop multiple carriers to find your best coverage — at no cost to you.</p>
+          <p class="footer-address">📍 100 Old Cherokee Rd Ste F #167, Lexington, SC 29072</p>
+          <div class="footer-rating">
+            <span>⭐⭐⭐⭐⭐</span>
+            <span>5.0 rating · 131 Google reviews</span>
+          </div>
         </div>
-
         <div class="footer-contact">
           <h4>Contact Us</h4>
           <p class="footer-agent-name">Ben Mauldin</p>
@@ -24,8 +29,8 @@ document.addEventListener('DOMContentLoaded', function () {
           <p><a href="mailto:ben@mauldininsurancegroup.com">ben@mauldininsurancegroup.com</a></p>
           <p style="margin-top:10px;"><a href="https://www.mauldininsurancegroup.com" target="_blank">MauldinInsuranceGroup.com</a></p>
           <p><a href="https://www.southcarolinamedicareagency.com" target="_blank">Medicare Insurance →</a></p>
+          <p><a href="https://www.midlandsmedicare.com" target="_blank">MidlandsMedicare.com →</a></p>
         </div>
-
         <div class="footer-links">
           <h4>Quick Links</h4>
           <ul>
@@ -34,11 +39,12 @@ document.addEventListener('DOMContentLoaded', function () {
             <li><a href="/renters-insurance-south-carolina">Renters Insurance</a></li>
             <li><a href="/business-insurance-south-carolina">Business Insurance</a></li>
             <li><a href="/life-insurance-south-carolina">Life Insurance</a></li>
+            <li><a href="/boat-insurance-lake-murray-sc">Boat — Lake Murray</a></li>
+            <li><a href="/landlord-insurance-south-carolina">Landlord Insurance</a></li>
             <li><a href="/service-areas">🗺️ All Service Areas</a></li>
           </ul>
         </div>
       </div>
-
       <p class="footer-disclaimer">Mauldin Insurance Group is an independent insurance agency licensed in South Carolina. We represent multiple insurance carriers and work to find the best coverage options for our clients. Coverage availability and pricing vary by carrier, location, and individual circumstances. This site is for informational purposes only and does not constitute a binding quote or offer of insurance.</p>
       <p class="footer-copy">&copy; 2026 Mauldin Insurance Group. All rights reserved. | Lexington, SC | Serving All of South Carolina</p>
     </div>
@@ -46,31 +52,47 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const footerCSS = `
   <style>
-    .site-footer { background: #0d1e3f; color: rgba(255,255,255,0.75); padding: 48px 20px 24px; margin-top: 0; }
+    .site-footer {
+      background: #0d1e3f;
+      color: rgba(255,255,255,0.75);
+      padding: 56px 20px 0;
+    }
     .footer-inner { max-width: 1100px; margin: 0 auto; }
-    .footer-top { display: flex; gap: 40px; flex-wrap: wrap; margin-bottom: 32px; }
-    .footer-brand { flex: 2; min-width: 240px; }
+    .footer-top {
+      display: grid;
+      grid-template-columns: 2fr 1.2fr 1.2fr;
+      gap: 48px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
     .footer-logo { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
     .footer-logo-text { display: flex; flex-direction: column; }
-    .footer-logo-name { color: white; font-size: 14px; font-weight: bold; }
-    .footer-logo-sub { color: #c9a227; font-size: 11px; }
-    .footer-tagline { font-size: 13px; line-height: 1.6; margin: 0; }
-    .footer-contact { flex: 1; min-width: 190px; }
-    .footer-links { flex: 1; min-width: 190px; }
-    .footer-contact h4, .footer-links h4 { color: white; font-size: 12px; font-weight: 700; margin-bottom: 10px; letter-spacing: 1px; text-transform: uppercase; }
-    .footer-contact p { font-size: 13px; margin-bottom: 5px; }
-    .footer-contact a, .footer-links a { color: #c9a227; text-decoration: none; }
+    .footer-logo-name { color: white; font-size: 14px; font-weight: bold; line-height: 1.2; }
+    .footer-logo-sub { color: #c9a227; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .footer-tagline { font-size: 13px; line-height: 1.6; margin: 0 0 10px; color: rgba(255,255,255,0.65); }
+    .footer-address { font-size: 12px; color: rgba(255,255,255,0.45); line-height: 1.5; margin: 0 0 14px; }
+    .footer-rating { display: flex; align-items: center; gap: 8px; font-size: 13px; color: rgba(255,255,255,0.65); }
+    .footer-contact h4, .footer-links h4 {
+      color: white; font-size: 12px; font-weight: 700; margin-bottom: 14px;
+      letter-spacing: 1px; text-transform: uppercase;
+    }
+    .footer-contact p { font-size: 13px; margin-bottom: 6px; color: rgba(255,255,255,0.75); }
+    .footer-contact a, .footer-links a { color: #c9a227; text-decoration: none; transition: color 0.2s; }
     .footer-contact a:hover, .footer-links a:hover { color: white; }
     .footer-agent-name { color: white; font-weight: 700; font-size: 13px; margin-bottom: 2px !important; }
-    .footer-links ul { list-style: none; padding: 0; margin: 0; }
-    .footer-links li { margin-bottom: 7px; font-size: 13px; }
-    .footer-disclaimer { font-size: 11px; line-height: 1.6; color: rgba(255,255,255,0.45); border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; margin-bottom: 10px; }
-    .footer-copy { font-size: 11px; color: rgba(255,255,255,0.35); margin: 0; }
-    @media (max-width: 700px) { .footer-top { flex-direction: column; gap: 28px; } }
+    .footer-links ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
+    .footer-links li a { font-size: 13px; color: rgba(255,255,255,0.75); text-decoration: none; transition: color 0.2s; }
+    .footer-links li a:hover { color: #c9a227; }
+    .footer-disclaimer { font-size: 11px; line-height: 1.6; color: rgba(255,255,255,0.35); padding: 24px 0 0; border-top: 1px solid rgba(255,255,255,0.08); }
+    .footer-copy { font-size: 11px; color: rgba(255,255,255,0.3); margin: 12px 0 0; padding-bottom: 24px; text-align: center; }
+    @media (max-width: 768px) { .footer-top { grid-template-columns: 1fr; gap: 32px; } }
   </style>`;
 
   document.head.insertAdjacentHTML('beforeend', footerCSS);
   const placeholder = document.getElementById('footer-placeholder');
-  if (placeholder) { placeholder.outerHTML = footerHTML; }
-  else { document.body.insertAdjacentHTML('beforeend', footerHTML); }
+  if (placeholder) {
+    placeholder.outerHTML = footerHTML;
+  } else {
+    document.body.insertAdjacentHTML('beforeend', footerHTML);
+  }
 });
