@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["InsuranceAgency","LocalBusiness"],"@id":"https://www.mauldininsurance.com/#organization","name":"Mauldin Insurance Group","url":"https://mauldininsurance.com/home-office-insurance-sc","telephone":"+18039208827","email":"ben@mauldininsurancegroup.com","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"131","bestRating":"5","worstRating":"1"},"address":{"@type":"PostalAddress","streetAddress":"100 Old Cherokee Rd Ste F #167","addressLocality":"Lexington","addressRegion":"SC","postalCode":"29072","addressCountry":"US"},"areaServed":{"@type":"State","name":"South Carolina"},"description":"Home office and home-based business insurance specialist in Lexington, SC. Proper coverage for remote workers and SC entrepreneurs who work from home.","sameAs":["https://www.mauldininsurancegroup.com","https://www.southcarolinamedicareagency.com","https://www.midlandsmedicare.com"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does my employer's insurance cover my home office equipment?","acceptedAnswer":{"@type":"Answer","text":"Sometimes \u2014 but don't assume. Many employers provide coverage for company-owned equipment used at home, but this varies significantly by employer and policy. For your personally owned equipment used for work, your homeowners policy applies \u2014 and the $2,500 business property sub-limit is rarely enough for a full home office setup."}},{"@type":"Question","name":"What if I just have a laptop and don't see clients?","acceptedAnswer":{"@type":"Answer","text":"A laptop used for work is business property \u2014 and your HO policy's $2,500 business property limit may or may not cover it adequately depending on the laptop's value and your policy's specific language. A quick review of your current policy tells you exactly where you stand, and an endorsement to increase that limit costs very little."}},{"@type":"Question","name":"I run a small business from home \u2014 do I need a separate policy?","acceptedAnswer":{"@type":"Answer","text":"Almost certainly yes. A home-based business that sees clients, stores inventory, or generates significant income needs commercial coverage that a homeowners policy cannot provide. In-home business policies start as low as $150\u2013$300/year and provide the liability and property protection your business activity requires."}},{"@type":"Question","name":"Will adding a home office endorsement raise my HO premium significantly?","acceptedAnswer":{"@type":"Answer","text":"Usually not. A basic business property endorsement adding $5,000\u2013$10,000 of equipment coverage typically costs $30\u2013$75/year \u2014 far less than the deductible you'd face if your equipment were stolen or destroyed without proper coverage."}}]}</script>
   <style>
     :root{--navy:#1a2e5a;--gold:#c9a227;--off-white:#f8f6f0}
     *{box-sizing:border-box}
@@ -70,7 +71,17 @@
     .stat-num{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,42px);color:var(--gold);margin-bottom:6px;display:block}
     .stat-desc{font-size:13px;color:rgba(255,255,255,0.75);line-height:1.5}
     @media(max-width:600px){.blog-grid{grid-template-columns:1fr}.coverage-grid{grid-template-columns:1fr}}
-  </style>
+  
+    .sticky-cta{position:fixed;left:0;right:0;bottom:0;display:flex;z-index:998;background:#1a2e5a;box-shadow:0 -2px 12px rgba(0,0,0,.18)}
+    .sticky-cta a{flex:1;text-align:center;padding:14px 8px;color:#fff;font-weight:700;font-size:15px;text-decoration:none;border-right:1px solid rgba(255,255,255,.18)}
+    .sticky-cta a:last-child{border-right:none}
+    .sticky-cta a.call{background:#c9a227;color:#1a2e5a}
+    .sticky-cta a.call:hover{background:#e0b93a}
+    .sticky-cta a.text:hover{background:rgba(255,255,255,.1)}
+    @media(min-width:760px){.sticky-cta{display:none}}
+    body{padding-bottom:64px}
+    @media(min-width:760px){body{padding-bottom:0}}
+</style>
 </head>
 <body>
 
@@ -84,6 +95,7 @@
     <p>Most remote workers and home-based business owners in SC have thousands of dollars in uninsured exposure. A simple policy review and small adjustment can close the gap completely.</p>
     <div class="hero-btns">
       <a href="tel:+18039208827" class="btn-primary">📞 Call 803-920-8827</a>
+      <a href="sms:8039208827" class="btn-outline">💬 Text Us</a>
       <a href="https://www.mauldininsurancegroup.com/contact" class="btn-outline" target="_blank">Get a Free Review</a>
     </div>
   </div>
@@ -181,6 +193,7 @@
   <p>A quick policy review tells you exactly what you have — and what you don't. We fix the gaps fast and affordably. No pressure, just honest advice.</p>
   <div class="cta-options">
     <a href="tel:+18039208827" class="btn-primary" style="font-size:16px;padding:16px 32px;">📞 Call 803-920-8827</a>
+  <a href="sms:8039208827" style="display:inline-block;background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.5);padding:12px 26px;border-radius:6px;text-decoration:none;font-weight:600;font-size:15px;margin-left:10px;">💬 Text Us</a>
     <a href="https://www.mauldininsurancegroup.com/contact" class="btn-outline" target="_blank">Request a Free Review</a>
   </div>
   <p class="cta-note">Ben Mauldin &nbsp;|&nbsp; 803-920-8827 &nbsp;|&nbsp; ben@mauldininsurancegroup.com</p>
@@ -198,6 +211,13 @@
     });
   });
 </script>
+
+
+<!-- MOBILE STICKY CALL/TEXT BAR -->
+<div class="sticky-cta">
+  <a href="tel:+18039208827" class="call">📞 Call 803-920-8827</a>
+  <a href="sms:8039208827" class="text">💬 Text</a>
+</div>
 
 </body>
 </html>

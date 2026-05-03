@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
 <script type="application/ld+json">{"@context":"https://schema.org","@type":["InsuranceAgency","LocalBusiness"],"@id":"https://www.mauldininsurance.com/#organization","name":"Mauldin Insurance Group","url":"https://mauldininsurance.com/homeowners-insurance-lexington-sc","telephone":"+18039208827","email":"ben@mauldininsurancegroup.com","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"131","bestRating":"5","worstRating":"1"},"address":{"@type":"PostalAddress","streetAddress":"100 Old Cherokee Rd Ste F #167","addressLocality":"Lexington","addressRegion":"SC","postalCode":"29072","addressCountry":"US"},"areaServed":{"@type":"State","name":"South Carolina"},"description":"Local independent homeowners insurance agent serving Lexington, SC and the Midlands. We shop multiple carriers to find the best home insurance rate.","sameAs":["https://www.mauldininsurancegroup.com","https://www.southcarolinamedicareagency.com","https://www.midlandsmedicare.com"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does home insurance cost in Lexington, SC?","acceptedAnswer":{"@type":"Answer","text":"Lexington County homeowners typically pay $1,100\u2013$2,200 per year for a $200,000\u2013$400,000 home, depending on age, construction, roof condition, and coverage levels. Rates have increased over the past two years but Lexington still tends to run more affordable than coastal or high-density urban areas. The best way to know your number is to call us for a free competitive quote."}},{"@type":"Question","name":"Do I need flood insurance in Lexington?","acceptedAnswer":{"@type":"Answer","text":"Lexington County has significant flood risk in areas near Lake Murray, the Saluda River, and low-lying neighborhoods. Standard homeowners insurance does not cover flooding from any source. Even if you're not in a FEMA high-risk flood zone, flooding can happen anywhere in the county. We assess your specific address and help you find affordable flood coverage if needed."}},{"@type":"Question","name":"My home insurance went up significantly \u2014 what can I do?","acceptedAnswer":{"@type":"Answer","text":"Rate increases are widespread in SC right now. The best response is to shop the market \u2014 comparing multiple carriers often finds better pricing even after recent increases. Bundling with auto insurance, raising your deductible, and updating your coverage to accurate levels can all help. Call us and we'll run a full competitive comparison for your Lexington home."}},{"@type":"Question","name":"How do I know if my home is underinsured?","acceptedAnswer":{"@type":"Answer","text":"Your dwelling coverage limit should reflect what it would cost to rebuild your home from scratch at today's construction prices \u2014 not what you paid for it or what it would sell for. With SC construction costs up 25\u201340% since 2020, many homeowners who haven't reviewed their policy recently are significantly underinsured. We run a free replacement cost estimate on every policy we review."}}]}</script>
 <style>
 :root{--navy:#1a2e5a;--gold:#c9a227;--off-white:#f8f6f0}
 *{box-sizing:border-box}
@@ -79,6 +80,16 @@ section{padding:60px 20px}
 .stat-num{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,42px);color:var(--gold);margin-bottom:6px;display:block}
 .stat-desc{font-size:13px;color:rgba(255,255,255,0.75);line-height:1.5}
 @media(max-width:600px){.blog-grid{grid-template-columns:1fr}.coverage-grid{grid-template-columns:1fr}}
+
+    .sticky-cta{position:fixed;left:0;right:0;bottom:0;display:flex;z-index:998;background:#1a2e5a;box-shadow:0 -2px 12px rgba(0,0,0,.18)}
+    .sticky-cta a{flex:1;text-align:center;padding:14px 8px;color:#fff;font-weight:700;font-size:15px;text-decoration:none;border-right:1px solid rgba(255,255,255,.18)}
+    .sticky-cta a:last-child{border-right:none}
+    .sticky-cta a.call{background:#c9a227;color:#1a2e5a}
+    .sticky-cta a.call:hover{background:#e0b93a}
+    .sticky-cta a.text:hover{background:rgba(255,255,255,.1)}
+    @media(min-width:760px){.sticky-cta{display:none}}
+    body{padding-bottom:64px}
+    @media(min-width:760px){body{padding-bottom:0}}
 </style>
 </head>
 <body>
@@ -91,6 +102,7 @@ section{padding:60px 20px}
     <p>Local, independent, and on your side. I'm Ben Mauldin — a Lexington agent who shops multiple carriers to find the right homeowners coverage for your specific home and situation.</p>
     <div class="hero-btns">
       <a href="tel:+18039208827" class="btn-primary">📞 Call 803-920-8827</a>
+      <a href="sms:8039208827" class="btn-outline">💬 Text Us</a>
       <a href="https://www.mauldininsurancegroup.com/contact" class="btn-outline" target="_blank">Get a Free Quote</a>
     </div>
   </div>
@@ -185,6 +197,7 @@ section{padding:60px 20px}
   <p>Whether you're buying a home, renewing, or just wondering if you're overpaying — call Ben for a free local comparison.</p>
   <div class="cta-options">
     <a href="tel:+18039208827" class="btn-primary" style="font-size:16px;padding:16px 32px;">📞 Call 803-920-8827</a>
+  <a href="sms:8039208827" style="display:inline-block;background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.5);padding:12px 26px;border-radius:6px;text-decoration:none;font-weight:600;font-size:15px;margin-left:10px;">💬 Text Us</a>
     <a href="https://www.mauldininsurancegroup.com/contact" class="btn-outline" target="_blank">Request a Free Quote</a>
   </div>
   <p class="cta-note">Ben Mauldin &nbsp;|&nbsp; 803-920-8827 &nbsp;|&nbsp; ben@mauldininsurancegroup.com</p>
@@ -201,5 +214,12 @@ document.querySelectorAll('.faq-q').forEach(btn => {
   });
 });
 </script>
+
+<!-- MOBILE STICKY CALL/TEXT BAR -->
+<div class="sticky-cta">
+  <a href="tel:+18039208827" class="call">📞 Call 803-920-8827</a>
+  <a href="sms:8039208827" class="text">💬 Text</a>
+</div>
+
 </body>
 </html>

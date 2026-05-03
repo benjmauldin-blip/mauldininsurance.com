@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["InsuranceAgency","LocalBusiness"],"@id":"https://www.mauldininsurance.com/#organization","name":"Mauldin Insurance Group","url":"https://mauldininsurance.com/home-insurance-rate-increase-sc","telephone":"+18039208827","email":"ben@mauldininsurancegroup.com","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"131","bestRating":"5","worstRating":"1"},"address":{"@type":"PostalAddress","streetAddress":"100 Old Cherokee Rd Ste F #167","addressLocality":"Lexington","addressRegion":"SC","postalCode":"29072","addressCountry":"US"},"areaServed":{"@type":"State","name":"South Carolina"},"description":"Independent insurance agent in Lexington, SC helping rate-shocked homeowners shop multiple carriers and find better coverage at a lower price.","sameAs":["https://www.mauldininsurancegroup.com","https://www.southcarolinamedicareagency.com","https://www.midlandsmedicare.com"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why did my home insurance go up if I had no claims?","acceptedAnswer":{"@type":"Answer","text":"Your rate is affected by far more than your personal claims history. Statewide loss trends, your carrier's overall book of business, reinsurance costs, local weather events, and construction cost inflation all affect your premium \u2014 even if you've never filed a claim. This is exactly why shopping the market matters \u2014 different carriers price these factors differently."}},{"@type":"Question","name":"Can I switch carriers mid-policy?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can cancel your current policy at any time and receive a pro-rated refund for unused premium. There's no penalty for switching. We handle the coordination to make sure there's no gap in coverage during the transition."}},{"@type":"Question","name":"How much can I realistically save by shopping?","acceptedAnswer":{"@type":"Answer","text":"It varies significantly by home, location, and current carrier. In the current SC market we're commonly finding savings of $300\u2013$700/year for homeowners who haven't shopped in 2+ years. Some rate-shocked clients save more. The only way to know your number is to run the comparison \u2014 which we do at no cost."}},{"@type":"Question","name":"Will switching carriers affect my coverage?","acceptedAnswer":{"@type":"Answer","text":"Not if done correctly. We make sure the new policy matches or improves your current coverage before recommending a switch. We never sacrifice coverage to hit a price point \u2014 the goal is the best combination of both."}}]}</script>
   <style>
     :root{--navy:#1a2e5a;--gold:#c9a227;--off-white:#f8f6f0}
     *{box-sizing:border-box}
@@ -70,7 +71,17 @@
     .stat-num{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,42px);color:var(--gold);margin-bottom:6px;display:block}
     .stat-desc{font-size:13px;color:rgba(255,255,255,0.75);line-height:1.5}
     @media(max-width:600px){.blog-grid{grid-template-columns:1fr}.coverage-grid{grid-template-columns:1fr}}
-  </style>
+  
+    .sticky-cta{position:fixed;left:0;right:0;bottom:0;display:flex;z-index:998;background:#1a2e5a;box-shadow:0 -2px 12px rgba(0,0,0,.18)}
+    .sticky-cta a{flex:1;text-align:center;padding:14px 8px;color:#fff;font-weight:700;font-size:15px;text-decoration:none;border-right:1px solid rgba(255,255,255,.18)}
+    .sticky-cta a:last-child{border-right:none}
+    .sticky-cta a.call{background:#c9a227;color:#1a2e5a}
+    .sticky-cta a.call:hover{background:#e0b93a}
+    .sticky-cta a.text:hover{background:rgba(255,255,255,.1)}
+    @media(min-width:760px){.sticky-cta{display:none}}
+    body{padding-bottom:64px}
+    @media(min-width:760px){body{padding-bottom:0}}
+</style>
 </head>
 <body>
 
@@ -84,6 +95,7 @@
     <p>South Carolina homeowners are seeing some of the steepest rate increases in the country. As an independent agent, I shop 10+ carriers to find you a better rate — without sacrificing coverage.</p>
     <div class="hero-btns">
       <a href="tel:+18039208827" class="btn-primary">📞 Call 803-920-8827</a>
+      <a href="sms:8039208827" class="btn-outline">💬 Text Us</a>
       <a href="https://www.mauldininsurancegroup.com/contact" class="btn-outline" target="_blank">Get a Free Comparison</a>
     </div>
   </div>
@@ -181,6 +193,7 @@
   <p>One call and we'll compare your current coverage against the market. No obligation — just honest numbers from a local agent who works for you.</p>
   <div class="cta-options">
     <a href="tel:+18039208827" class="btn-primary" style="font-size:16px;padding:16px 32px;">📞 Call 803-920-8827</a>
+  <a href="sms:8039208827" style="display:inline-block;background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.5);padding:12px 26px;border-radius:6px;text-decoration:none;font-weight:600;font-size:15px;margin-left:10px;">💬 Text Us</a>
     <a href="https://www.mauldininsurancegroup.com/contact" class="btn-outline" target="_blank">Request a Free Comparison</a>
   </div>
   <p class="cta-note">Ben Mauldin &nbsp;|&nbsp; 803-920-8827 &nbsp;|&nbsp; ben@mauldininsurancegroup.com</p>
@@ -198,6 +211,13 @@
     });
   });
 </script>
+
+
+<!-- MOBILE STICKY CALL/TEXT BAR -->
+<div class="sticky-cta">
+  <a href="tel:+18039208827" class="call">📞 Call 803-920-8827</a>
+  <a href="sms:8039208827" class="text">💬 Text</a>
+</div>
 
 </body>
 </html>

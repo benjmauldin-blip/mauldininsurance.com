@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["InsuranceAgency","LocalBusiness"],"@id":"https://www.mauldininsurance.com/#organization","name":"Mauldin Insurance Group","url":"https://mauldininsurance.com/airbnb-vrbo-insurance-lexington-sc","telephone":"+18039208827","email":"ben@mauldininsurancegroup.com","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"131","bestRating":"5","worstRating":"1"},"address":{"@type":"PostalAddress","streetAddress":"100 Old Cherokee Rd Ste F #167","addressLocality":"Lexington","addressRegion":"SC","postalCode":"29072","addressCountry":"US"},"areaServed":{"@type":"State","name":"South Carolina"},"description":"Short-term rental insurance specialist serving Lexington, SC and Lake Murray Airbnb and VRBO hosts. Proper STR coverage for SC vacation rental property owners.","sameAs":["https://www.mauldininsurancegroup.com","https://www.southcarolinamedicareagency.com","https://www.midlandsmedicare.com"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Doesn't Airbnb AirCover protect me?","acceptedAnswer":{"@type":"Answer","text":"AirCover is Airbnb's host guarantee program \u2014 not an insurance policy. It has significant exclusions, coverage caps, and a claims process entirely controlled by Airbnb. It does not replace proper liability insurance, doesn't cover all types of property damage, and provides no protection for incidents that Airbnb disputes. It should be considered a supplement to, not a replacement for, real STR insurance."}},{"@type":"Question","name":"Will my homeowners carrier find out if I'm renting on Airbnb?","acceptedAnswer":{"@type":"Answer","text":"Potentially \u2014 and the consequences can be serious. If you file a claim and your carrier discovers you were operating a short-term rental without disclosure, they can deny the claim and non-renew your policy. The right approach is to disclose the rental activity and get properly covered, which is often less expensive than most homeowners expect."}},{"@type":"Question","name":"How much does STR insurance cost in SC?","acceptedAnswer":{"@type":"Answer","text":"Cost varies based on the property value, rental frequency, location, and coverage limits. For most SC short-term rental properties, properly endorsed or standalone STR coverage runs $800\u2013$2,000/year. Given the liability exposure from hosting paying guests, this is one of the highest-value insurance decisions a host can make."}},{"@type":"Question","name":"Do I need STR insurance if I only rent a few times a year?","acceptedAnswer":{"@type":"Answer","text":"Yes \u2014 even occasional rental creates liability exposure that standard HO policies exclude. A guest injured during a single rental weekend can generate a lawsuit that your HO policy won't cover. The good news is that endorsements for occasional rental are typically very affordable \u2014 often just $100\u2013$300/year added to your existing policy."}}]}</script>
   <style>
     :root{--navy:#1a2e5a;--gold:#c9a227;--off-white:#f8f6f0}
     *{box-sizing:border-box}
@@ -70,7 +71,17 @@
     .stat-num{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,42px);color:var(--gold);margin-bottom:6px;display:block}
     .stat-desc{font-size:13px;color:rgba(255,255,255,0.75);line-height:1.5}
     @media(max-width:600px){.blog-grid{grid-template-columns:1fr}.coverage-grid{grid-template-columns:1fr}}
-  </style>
+  
+    .sticky-cta{position:fixed;left:0;right:0;bottom:0;display:flex;z-index:998;background:#1a2e5a;box-shadow:0 -2px 12px rgba(0,0,0,.18)}
+    .sticky-cta a{flex:1;text-align:center;padding:14px 8px;color:#fff;font-weight:700;font-size:15px;text-decoration:none;border-right:1px solid rgba(255,255,255,.18)}
+    .sticky-cta a:last-child{border-right:none}
+    .sticky-cta a.call{background:#c9a227;color:#1a2e5a}
+    .sticky-cta a.call:hover{background:#e0b93a}
+    .sticky-cta a.text:hover{background:rgba(255,255,255,.1)}
+    @media(min-width:760px){.sticky-cta{display:none}}
+    body{padding-bottom:64px}
+    @media(min-width:760px){body{padding-bottom:0}}
+</style>
 </head>
 <body>
 
@@ -84,6 +95,7 @@
     <p>Airbnb AirCover sounds reassuring — but it's not insurance. SC short-term rental hosts face serious coverage gaps that a standard homeowners policy won't fill. Let's fix that.</p>
     <div class="hero-btns">
       <a href="tel:+18039208827" class="btn-primary">📞 Call 803-920-8827</a>
+      <a href="sms:8039208827" class="btn-outline">💬 Text Us</a>
       <a href="https://www.mauldininsurancegroup.com/contact" class="btn-outline" target="_blank">Get a Free Quote</a>
     </div>
   </div>
@@ -181,6 +193,7 @@
   <p>One conversation and we'll assess your rental situation and find the right coverage. No pressure — just honest advice from a local Lexington agent.</p>
   <div class="cta-options">
     <a href="tel:+18039208827" class="btn-primary" style="font-size:16px;padding:16px 32px;">📞 Call 803-920-8827</a>
+  <a href="sms:8039208827" style="display:inline-block;background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.5);padding:12px 26px;border-radius:6px;text-decoration:none;font-weight:600;font-size:15px;margin-left:10px;">💬 Text Us</a>
     <a href="https://www.mauldininsurancegroup.com/contact" class="btn-outline" target="_blank">Request a Free Quote</a>
   </div>
   <p class="cta-note">Ben Mauldin &nbsp;|&nbsp; 803-920-8827 &nbsp;|&nbsp; ben@mauldininsurancegroup.com</p>
@@ -198,6 +211,13 @@
     });
   });
 </script>
+
+
+<!-- MOBILE STICKY CALL/TEXT BAR -->
+<div class="sticky-cta">
+  <a href="tel:+18039208827" class="call">📞 Call 803-920-8827</a>
+  <a href="sms:8039208827" class="text">💬 Text</a>
+</div>
 
 </body>
 </html>

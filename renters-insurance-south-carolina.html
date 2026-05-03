@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
 <script type="application/ld+json">{"@context":"https://schema.org","@type":["InsuranceAgency","LocalBusiness"],"@id":"https://www.mauldininsurance.com/#organization","name":"Mauldin Insurance Group","url":"https://mauldininsurance.com/renters-insurance-south-carolina","telephone":"+18039208827","email":"ben@mauldininsurancegroup.com","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"131","bestRating":"5","worstRating":"1"},"address":{"@type":"PostalAddress","streetAddress":"100 Old Cherokee Rd Ste F #167","addressLocality":"Lexington","addressRegion":"SC","postalCode":"29072","addressCountry":"US"},"areaServed":{"@type":"State","name":"South Carolina"},"description":"Independent renters insurance agent in Lexington, SC. Affordable coverage for SC renters starting under $20/month.","sameAs":["https://www.mauldininsurancegroup.com","https://www.southcarolinamedicareagency.com","https://www.midlandsmedicare.com"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does renters insurance cost in South Carolina?","acceptedAnswer":{"@type":"Answer","text":"Renters insurance in South Carolina typically costs $15\u2013$30 per month for solid coverage with $30,000 in personal property and $100,000 in liability. Your exact rate depends on your location, coverage amounts, and deductible. Call us for a free quote \u2014 it takes about 10 minutes."}},{"@type":"Question","name":"Does renters insurance cover my car?","acceptedAnswer":{"@type":"Answer","text":"Renters insurance does not cover your vehicle \u2014 that's what auto insurance is for. However, it may cover personal items stolen from inside your car, depending on the policy. We can help you make sure you don't have any gaps between your auto and renters coverage."}},{"@type":"Question","name":"Does renters insurance cover my roommate?","acceptedAnswer":{"@type":"Answer","text":"Generally, renters insurance only covers the named insured. Roommates typically need their own separate policy unless they are listed as additional insureds. We can walk you through the options for your specific situation."}},{"@type":"Question","name":"Can I bundle renters insurance with auto?","acceptedAnswer":{"@type":"Answer","text":"Yes \u2014 and bundling is one of the easiest ways to save on both. Most carriers offer a multi-policy discount when you combine renters and auto insurance, often saving 5\u201315% on your auto premium while adding renters for just a few extra dollars a month."}}]}</script>
 <style>
 :root{--navy:#1a2e5a;--gold:#c9a227;--off-white:#f8f6f0}
 *{box-sizing:border-box}
@@ -79,6 +80,16 @@ section{padding:60px 20px}
 .stat-num{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,42px);color:var(--gold);margin-bottom:6px;display:block}
 .stat-desc{font-size:13px;color:rgba(255,255,255,0.75);line-height:1.5}
 @media(max-width:600px){.blog-grid{grid-template-columns:1fr}.coverage-grid{grid-template-columns:1fr}}
+
+    .sticky-cta{position:fixed;left:0;right:0;bottom:0;display:flex;z-index:998;background:#1a2e5a;box-shadow:0 -2px 12px rgba(0,0,0,.18)}
+    .sticky-cta a{flex:1;text-align:center;padding:14px 8px;color:#fff;font-weight:700;font-size:15px;text-decoration:none;border-right:1px solid rgba(255,255,255,.18)}
+    .sticky-cta a:last-child{border-right:none}
+    .sticky-cta a.call{background:#c9a227;color:#1a2e5a}
+    .sticky-cta a.call:hover{background:#e0b93a}
+    .sticky-cta a.text:hover{background:rgba(255,255,255,.1)}
+    @media(min-width:760px){.sticky-cta{display:none}}
+    body{padding-bottom:64px}
+    @media(min-width:760px){body{padding-bottom:0}}
 </style>
 </head>
 <body>
@@ -91,6 +102,7 @@ section{padding:60px 20px}
     <p>Your landlord's insurance covers the building — not your belongings. Renters insurance is one of the most affordable policies available, and one of the most overlooked.</p>
     <div class="hero-btns">
       <a href="tel:+18039208827" class="btn-primary">📞 Call 803-920-8827</a>
+      <a href="sms:8039208827" class="btn-outline">💬 Text Us</a>
       <a href="https://www.mauldininsurancegroup.com/contact" class="btn-outline" target="_blank">Get a Free Quote</a>
     </div>
   </div>
@@ -162,6 +174,7 @@ section{padding:60px 20px}
   <p>Takes about 10 minutes. Affordable coverage that protects everything you own — from a local Lexington agent you can actually call.</p>
   <div class="cta-options">
     <a href="tel:+18039208827" class="btn-primary" style="font-size:16px;padding:16px 32px;">📞 Call 803-920-8827</a>
+  <a href="sms:8039208827" style="display:inline-block;background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.5);padding:12px 26px;border-radius:6px;text-decoration:none;font-weight:600;font-size:15px;margin-left:10px;">💬 Text Us</a>
     <a href="https://www.mauldininsurancegroup.com/contact" class="btn-outline" target="_blank">Request a Free Quote</a>
   </div>
   <p class="cta-note">Ben Mauldin &nbsp;|&nbsp; 803-920-8827 &nbsp;|&nbsp; ben@mauldininsurancegroup.com</p>
@@ -178,5 +191,12 @@ document.querySelectorAll('.faq-q').forEach(btn => {
   });
 });
 </script>
+
+<!-- MOBILE STICKY CALL/TEXT BAR -->
+<div class="sticky-cta">
+  <a href="tel:+18039208827" class="call">📞 Call 803-920-8827</a>
+  <a href="sms:8039208827" class="text">💬 Text</a>
+</div>
+
 </body>
 </html>

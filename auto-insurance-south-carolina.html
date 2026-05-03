@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
 <script type="application/ld+json">{"@context":"https://schema.org","@type":["InsuranceAgency","LocalBusiness"],"@id":"https://www.mauldininsurance.com/#organization","name":"Mauldin Insurance Group","url":"https://mauldininsurance.com/auto-insurance-south-carolina","telephone":"+18039208827","email":"ben@mauldininsurancegroup.com","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"131","bestRating":"5","worstRating":"1"},"address":{"@type":"PostalAddress","streetAddress":"100 Old Cherokee Rd Ste F #167","addressLocality":"Lexington","addressRegion":"SC","postalCode":"29072","addressCountry":"US"},"areaServed":{"@type":"State","name":"South Carolina"},"description":"Independent auto insurance agent in Lexington, SC. We shop multiple carriers for the best car insurance rates in South Carolina.","sameAs":["https://www.mauldininsurancegroup.com","https://www.southcarolinamedicareagency.com","https://www.midlandsmedicare.com"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the minimum auto insurance required in South Carolina?","acceptedAnswer":{"@type":"Answer","text":"South Carolina requires minimum liability coverage of 25/50/25 \u2014 meaning $25,000 per person for bodily injury, $50,000 per accident for bodily injury, and $25,000 for property damage. Uninsured motorist coverage is also required. However, these minimums are often not enough to fully protect you \u2014 we help you find the right coverage level for your situation."}},{"@type":"Question","name":"How much does auto insurance cost in South Carolina?","acceptedAnswer":{"@type":"Answer","text":"Auto insurance rates in SC vary widely based on your driving record, vehicle, age, credit score, ZIP code, and coverage level. As an independent agent, I shop multiple carriers to find you the most competitive rate for your specific profile. The best way to find out is to call us for a free no-obligation quote."}},{"@type":"Question","name":"Can you insure multiple vehicles on one policy?","acceptedAnswer":{"@type":"Answer","text":"Yes \u2014 and it's usually the most cost-effective option. Most carriers offer a multi-vehicle discount, and having all your vehicles on one policy simplifies billing and renewals. We can add cars, trucks, motorcycles, and more."}},{"@type":"Question","name":"What happens if I get into an accident?","acceptedAnswer":{"@type":"Answer","text":"Call the police if needed, document the scene, exchange information, and then call me. As your agent, I can help guide you through the claims process with your carrier. Having a local agent in your corner during a claim is one of the biggest advantages of working with an independent agent."}},{"@type":"Question","name":"Do you insure high-risk drivers?","acceptedAnswer":{"@type":"Answer","text":"We work with carriers that cover a wide range of driving histories, including drivers who have had accidents, tickets, or DUIs. Coverage and pricing will depend on your specific situation. Call us and we'll tell you what options are available to you."}}]}</script>
 <style>
 :root{--navy:#1a2e5a;--gold:#c9a227;--off-white:#f8f6f0}
 *{box-sizing:border-box}
@@ -66,6 +67,16 @@ section{padding:60px 20px}
 .blog-card h3{font-size:16px;color:var(--navy);margin:0 0 8px;line-height:1.4;font-family:'Playfair Display',serif}
 .blog-card p{font-size:13px;color:#666;line-height:1.6;margin:0 0 12px}
 .blog-card-link{font-size:13px;font-weight:700;color:var(--gold)}
+
+    .sticky-cta{position:fixed;left:0;right:0;bottom:0;display:flex;z-index:998;background:#1a2e5a;box-shadow:0 -2px 12px rgba(0,0,0,.18)}
+    .sticky-cta a{flex:1;text-align:center;padding:14px 8px;color:#fff;font-weight:700;font-size:15px;text-decoration:none;border-right:1px solid rgba(255,255,255,.18)}
+    .sticky-cta a:last-child{border-right:none}
+    .sticky-cta a.call{background:#c9a227;color:#1a2e5a}
+    .sticky-cta a.call:hover{background:#e0b93a}
+    .sticky-cta a.text:hover{background:rgba(255,255,255,.1)}
+    @media(min-width:760px){.sticky-cta{display:none}}
+    body{padding-bottom:64px}
+    @media(min-width:760px){body{padding-bottom:0}}
 </style>
 </head>
 <body>
@@ -79,6 +90,7 @@ section{padding:60px 20px}
     <p>As an independent agent in Lexington, SC, I shop multiple carriers to find you the right car insurance coverage at the lowest available rate.</p>
     <div class="hero-btns">
       <a href="tel:+18039208827" class="btn-primary">📞 Call 803-920-8827</a>
+      <a href="sms:8039208827" class="btn-outline">💬 Text Us</a>
       <a href="https://www.mauldininsurancegroup.com/contact" class="btn-outline" target="_blank">Get a Free Quote</a>
     </div>
   </div>
@@ -161,6 +173,7 @@ section{padding:60px 20px}
   <p>Takes just a few minutes. No pressure, no obligation — just honest comparison from a local Lexington agent.</p>
   <div class="cta-options">
     <a href="tel:+18039208827" class="btn-primary" style="font-size:16px;padding:16px 32px;">📞 Call 803-920-8827</a>
+  <a href="sms:8039208827" style="display:inline-block;background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.5);padding:12px 26px;border-radius:6px;text-decoration:none;font-weight:600;font-size:15px;margin-left:10px;">💬 Text Us</a>
     <a href="https://www.mauldininsurancegroup.com/contact" class="btn-outline" target="_blank">Request a Quote Online</a>
   </div>
   <p class="cta-note">Ben Mauldin &nbsp;|&nbsp; 803-920-8827 &nbsp;|&nbsp; ben@mauldininsurancegroup.com</p>
@@ -178,5 +191,12 @@ document.querySelectorAll('.faq-q').forEach(btn => {
   });
 });
 </script>
+
+<!-- MOBILE STICKY CALL/TEXT BAR -->
+<div class="sticky-cta">
+  <a href="tel:+18039208827" class="call">📞 Call 803-920-8827</a>
+  <a href="sms:8039208827" class="text">💬 Text</a>
+</div>
+
 </body>
 </html>

@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["InsuranceAgency","LocalBusiness"],"@id":"https://www.mauldininsurance.com/#organization","name":"Mauldin Insurance Group","url":"https://mauldininsurance.com/life-insurance-south-carolina","telephone":"+18039208827","email":"ben@mauldininsurancegroup.com","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"131","bestRating":"5","worstRating":"1"},"address":{"@type":"PostalAddress","streetAddress":"100 Old Cherokee Rd Ste F #167","addressLocality":"Lexington","addressRegion":"SC","postalCode":"29072","addressCountry":"US"},"areaServed":{"@type":"State","name":"South Carolina"},"description":"Independent life insurance agent in Lexington, SC. Term, whole, and final expense coverage for South Carolina families.","sameAs":["https://www.mauldininsurancegroup.com","https://www.southcarolinamedicareagency.com","https://www.midlandsmedicare.com"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does term life insurance cost in South Carolina?","acceptedAnswer":{"@type":"Answer","text":"Term life insurance is much more affordable than most people expect. A healthy 35-year-old can typically get $500,000 of 20-year term coverage for $25\u2013$38 per month. A $1,000,000 policy often costs $42\u2013$58/month. The best time to buy is when you're young and healthy \u2014 rates increase with age."}},{"@type":"Question","name":"Can I get life insurance if I have health conditions?","acceptedAnswer":{"@type":"Answer","text":"Yes \u2014 we work with multiple carriers, some of which specialize in coverage for people with diabetes, heart conditions, and other health issues. Guaranteed issue and simplified issue policies are available with no or minimal health questions. Call us and we'll identify which carriers offer the most favorable terms for your specific situation."}},{"@type":"Question","name":"What's the difference between term and whole life?","acceptedAnswer":{"@type":"Answer","text":"Term life covers you for a set period (10, 20, or 30 years) at a lower cost. When the term ends, coverage stops. Whole life covers you for your entire lifetime and builds cash value. Most families with mortgages and young children start with term \u2014 it provides the most coverage at the most affordable price during the years you need it most."}},{"@type":"Question","name":"What happens to my employer life insurance when I leave?","acceptedAnswer":{"@type":"Answer","text":"Group life insurance through your employer typically ends when you leave the job. Most group policies also cap coverage at 1\u20132 times your salary \u2014 rarely enough for a family with a mortgage. Every working South Carolinian should have individual coverage they own regardless of their employment status."}}]}</script>
   <style>
     :root{--navy:#1a2e5a;--gold:#c9a227;--off-white:#f8f6f0}
     *{box-sizing:border-box}
@@ -65,7 +66,17 @@
     .blog-card p{font-size:13px;color:#666;line-height:1.6;margin:0 0 12px}
     .blog-card-link{font-size:13px;font-weight:700;color:var(--gold)}
     @media(max-width:600px){.blog-grid{grid-template-columns:1fr}.coverage-grid{grid-template-columns:1fr}}
-  </style>
+  
+    .sticky-cta{position:fixed;left:0;right:0;bottom:0;display:flex;z-index:998;background:#1a2e5a;box-shadow:0 -2px 12px rgba(0,0,0,.18)}
+    .sticky-cta a{flex:1;text-align:center;padding:14px 8px;color:#fff;font-weight:700;font-size:15px;text-decoration:none;border-right:1px solid rgba(255,255,255,.18)}
+    .sticky-cta a:last-child{border-right:none}
+    .sticky-cta a.call{background:#c9a227;color:#1a2e5a}
+    .sticky-cta a.call:hover{background:#e0b93a}
+    .sticky-cta a.text:hover{background:rgba(255,255,255,.1)}
+    @media(min-width:760px){.sticky-cta{display:none}}
+    body{padding-bottom:64px}
+    @media(min-width:760px){body{padding-bottom:0}}
+</style>
 </head>
 <body>
 
@@ -79,6 +90,7 @@
     <p>Term, whole, and final expense life insurance from multiple top-rated carriers. As an independent agent in Lexington, SC, I find the right policy for your family and your budget.</p>
     <div class="hero-btns">
       <a href="tel:+18039208827" class="btn-primary">📞 Call 803-920-8827</a>
+      <a href="sms:8039208827" class="btn-outline">💬 Text Us</a>
       <a href="https://www.mauldininsurancegroup.com/contact" class="btn-outline" target="_blank">Get a Free Quote</a>
     </div>
   </div>
@@ -167,6 +179,7 @@
   <p>We shop multiple carriers to find the best rate for your age, health, and coverage needs. No pressure, just honest advice.</p>
   <div class="cta-options">
     <a href="tel:+18039208827" class="btn-primary" style="font-size:16px;padding:16px 32px;">📞 Call 803-920-8827</a>
+  <a href="sms:8039208827" style="display:inline-block;background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.5);padding:12px 26px;border-radius:6px;text-decoration:none;font-weight:600;font-size:15px;margin-left:10px;">💬 Text Us</a>
     <a href="https://www.mauldininsurancegroup.com/contact" class="btn-outline" target="_blank">Request a Free Quote</a>
   </div>
   <p class="cta-note">Ben Mauldin &nbsp;|&nbsp; 803-920-8827 &nbsp;|&nbsp; ben@mauldininsurancegroup.com</p>
@@ -184,6 +197,13 @@
     });
   });
 </script>
+
+
+<!-- MOBILE STICKY CALL/TEXT BAR -->
+<div class="sticky-cta">
+  <a href="tel:+18039208827" class="call">📞 Call 803-920-8827</a>
+  <a href="sms:8039208827" class="text">💬 Text</a>
+</div>
 
 </body>
 </html>

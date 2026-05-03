@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
   <script type="application/ld+json">{"@context":"https://schema.org","@type":["InsuranceAgency","LocalBusiness"],"@id":"https://www.mauldininsurance.com/#organization","name":"Mauldin Insurance Group","url":"https://mauldininsurance.com/new-to-lexington-sc-insurance","telephone":"+18039208827","email":"ben@mauldininsurancegroup.com","aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"131","bestRating":"5","worstRating":"1"},"address":{"@type":"PostalAddress","streetAddress":"100 Old Cherokee Rd Ste F #167","addressLocality":"Lexington","addressRegion":"SC","postalCode":"29072","addressCountry":"US"},"areaServed":{"@type":"State","name":"South Carolina"},"description":"Local independent insurance agent in Lexington, SC helping new residents and homeowners get properly covered from day one.","sameAs":["https://www.mauldininsurancegroup.com","https://www.southcarolinamedicareagency.com","https://www.midlandsmedicare.com"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How soon do I need to get SC auto insurance after moving?","acceptedAnswer":{"@type":"Answer","text":"You must register your vehicle in South Carolina within 45 days of establishing residency. Most people update their auto insurance at the same time to get their new SC rate \u2014 which can be higher or lower than your previous state depending on your zip code and driving record."}},{"@type":"Question","name":"Can I keep my current homeowners policy when I move to SC?","acceptedAnswer":{"@type":"Answer","text":"No \u2014 your current policy is tied to your previous address and state. You'll need a new SC homeowners policy for your Lexington home. This is actually an opportunity to shop the market fresh and make sure your coverage is right-sized for SC's specific risk environment."}},{"@type":"Question","name":"Do I need flood insurance in Lexington?","acceptedAnswer":{"@type":"Answer","text":"It depends on your specific address. Homes near Lake Murray, the Saluda River, or low-lying areas carry meaningful flood risk. Even outside of FEMA high-risk zones, flooding can happen anywhere in Lexington County. We check your address's flood map status and help you decide if flood coverage makes sense."}},{"@type":"Question","name":"How long does it take to get set up with a new agent?","acceptedAnswer":{"@type":"Answer","text":"One phone call is usually all it takes to get started. We gather your information, shop multiple carriers, and can typically have quotes ready the same day. For homeowners insurance needed before closing, we can often turn around a policy within 24 hours."}}]}</script>
   <style>
     :root{--navy:#1a2e5a;--gold:#c9a227;--off-white:#f8f6f0}
     *{box-sizing:border-box}
@@ -74,7 +75,17 @@
     .checklist li:last-child{border-bottom:none}
     .checklist li::before{content:"✅";flex-shrink:0}
     @media(max-width:600px){.blog-grid{grid-template-columns:1fr}.coverage-grid{grid-template-columns:1fr}}
-  </style>
+  
+    .sticky-cta{position:fixed;left:0;right:0;bottom:0;display:flex;z-index:998;background:#1a2e5a;box-shadow:0 -2px 12px rgba(0,0,0,.18)}
+    .sticky-cta a{flex:1;text-align:center;padding:14px 8px;color:#fff;font-weight:700;font-size:15px;text-decoration:none;border-right:1px solid rgba(255,255,255,.18)}
+    .sticky-cta a:last-child{border-right:none}
+    .sticky-cta a.call{background:#c9a227;color:#1a2e5a}
+    .sticky-cta a.call:hover{background:#e0b93a}
+    .sticky-cta a.text:hover{background:rgba(255,255,255,.1)}
+    @media(min-width:760px){.sticky-cta{display:none}}
+    body{padding-bottom:64px}
+    @media(min-width:760px){body{padding-bottom:0}}
+</style>
 </head>
 <body>
 
@@ -88,6 +99,7 @@
     <p>Moving to Lexington is exciting — but insurance in South Carolina works differently than most states. As a local independent agent, I'll make sure you're properly covered from day one.</p>
     <div class="hero-btns">
       <a href="tel:+18039208827" class="btn-primary">📞 Call 803-920-8827</a>
+      <a href="sms:8039208827" class="btn-outline">💬 Text Us</a>
       <a href="https://www.mauldininsurancegroup.com/contact" class="btn-outline" target="_blank">Get a Free Quote</a>
     </div>
   </div>
@@ -185,6 +197,7 @@
   <p>One call covers everything. I'll review your home, auto, and any other coverage needs and find the best options for your new Lexington life.</p>
   <div class="cta-options">
     <a href="tel:+18039208827" class="btn-primary" style="font-size:16px;padding:16px 32px;">📞 Call 803-920-8827</a>
+  <a href="sms:8039208827" style="display:inline-block;background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.5);padding:12px 26px;border-radius:6px;text-decoration:none;font-weight:600;font-size:15px;margin-left:10px;">💬 Text Us</a>
     <a href="https://www.mauldininsurancegroup.com/contact" class="btn-outline" target="_blank">Request a Free Quote</a>
   </div>
   <p class="cta-note">Ben Mauldin &nbsp;|&nbsp; 803-920-8827 &nbsp;|&nbsp; ben@mauldininsurancegroup.com</p>
@@ -202,6 +215,13 @@
     });
   });
 </script>
+
+
+<!-- MOBILE STICKY CALL/TEXT BAR -->
+<div class="sticky-cta">
+  <a href="tel:+18039208827" class="call">📞 Call 803-920-8827</a>
+  <a href="sms:8039208827" class="text">💬 Text</a>
+</div>
 
 </body>
 </html>
