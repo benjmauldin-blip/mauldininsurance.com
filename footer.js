@@ -9,13 +9,13 @@ document.addEventListener('DOMContentLoaded', function () {
       <div class="footer-top">
         <div class="footer-brand">
           <div class="footer-logo">
-            <img src="https://irp.cdn-website.com/ed566c5d/dms3rep/multi/Screenshot+2024-07-02+at+11.29.07%C3%A2--AM.png" alt="Mauldin Insurance Group" style="height:40px;width:auto;max-width:120px;object-fit:contain;" />
+            <img src="https://irp.cdn-website.com/ed566c5d/dms3rep/multi/favicon.png" alt="Mauldin Insurance Group" style="height:40px;width:auto;max-width:120px;object-fit:contain;" />
             <div class="footer-logo-text">
               <span class="footer-logo-name">Mauldin Insurance Group</span>
               <span class="footer-logo-sub">Independent Insurance Agent — Lexington, SC</span>
             </div>
           </div>
-          <p class="footer-tagline">Independent insurance agent serving all of South Carolina. Based in Lexington, SC. We shop multiple carriers to find your best coverage — at no cost to you.</p>
+          <p class="footer-tagline">Independent insurance agent serving all of South Carolina, North Carolina, and Georgia. Based in Lexington, SC. We shop multiple carriers to find your best coverage — at no cost to you.</p>
           <p class="footer-address">📍 100 Old Cherokee Rd Ste F #167, Lexington, SC 29072</p>
           <div class="footer-rating">
             <span>⭐⭐⭐⭐⭐</span>
@@ -26,26 +26,33 @@ document.addEventListener('DOMContentLoaded', function () {
           <h4>Contact Us</h4>
           <p class="footer-agent-name">Ben Mauldin</p>
           <p><a href="tel:+18039208827">803-920-8827</a></p>
+          <p><a href="sms:8039208827">💬 Text 803-920-8827</a></p>
           <p><a href="mailto:ben@mauldininsurancegroup.com">ben@mauldininsurancegroup.com</a></p>
-          <p style="margin-top:10px;"><a href="https://www.mauldininsurancegroup.com" target="_blank">MauldinInsuranceGroup.com</a></p>
+          <p style="margin-top:12px;"><a href="https://www.mauldininsurancegroup.com" target="_blank">MauldinInsuranceGroup.com</a></p>
           <p><a href="https://www.southcarolinamedicareagency.com" target="_blank">Medicare Insurance →</a></p>
-          <p><a href="https://www.midlandsmedicare.com" target="_blank">MidlandsMedicare.com →</a></p>
+          <p><a href="https://www.midlandsmedicare.com" target="_blank" style="color:#e0b93a;">MidlandsMedicare.com →</a></p>
         </div>
         <div class="footer-links">
           <h4>Quick Links</h4>
           <ul>
             <li><a href="/auto-insurance-south-carolina">Auto Insurance</a></li>
             <li><a href="/home-insurance-south-carolina">Home Insurance</a></li>
+            <li><a href="/homeowners-insurance-lexington-sc">Homeowners — Lexington SC</a></li>
+            <li><a href="/new-to-lexington-sc-insurance">New to Lexington SC</a></li>
+            <li><a href="/home-insurance-rate-increase-sc">Rate Increase? Shop &amp; Save</a></li>
             <li><a href="/renters-insurance-south-carolina">Renters Insurance</a></li>
+            <li><a href="/landlord-insurance-south-carolina">Landlord Insurance</a></li>
+            <li><a href="/airbnb-vrbo-insurance-lexington-sc">Airbnb &amp; VRBO Insurance</a></li>
+            <li><a href="/home-office-insurance-sc">Home Office Insurance</a></li>
+            <li><a href="/boat-insurance-lake-murray-sc">Boat Insurance — Lake Murray</a></li>
+            <li><a href="/waterfront-home-insurance-lake-murray-sc">Waterfront Home — Lake Murray</a></li>
             <li><a href="/business-insurance-south-carolina">Business Insurance</a></li>
             <li><a href="/life-insurance-south-carolina">Life Insurance</a></li>
-            <li><a href="/boat-insurance-lake-murray-sc">Boat — Lake Murray</a></li>
-            <li><a href="/landlord-insurance-south-carolina">Landlord Insurance</a></li>
             <li><a href="/service-areas">🗺️ All Service Areas</a></li>
           </ul>
         </div>
       </div>
-      <p class="footer-disclaimer">Mauldin Insurance Group is an independent insurance agency licensed in South Carolina. We represent multiple insurance carriers and work to find the best coverage options for our clients. Coverage availability and pricing vary by carrier, location, and individual circumstances. This site is for informational purposes only and does not constitute a binding quote or offer of insurance.</p>
+      <p class="footer-disclaimer">Mauldin Insurance Group is an independent insurance agency licensed in South Carolina, North Carolina, and Georgia. We represent multiple insurance carriers and work to find the best coverage options for our clients. Coverage availability and pricing vary by carrier, location, and individual circumstances. This site is for informational purposes only and does not constitute a binding quote or offer of insurance.</p>
       <p class="footer-copy">&copy; 2026 Mauldin Insurance Group. All rights reserved. | Lexington, SC | Serving All of South Carolina</p>
     </div>
   </footer>`;

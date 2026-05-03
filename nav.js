@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
           <li><a href="/service-areas" class="nav-link">Service Areas</a></li>
           <li><a href="https://www.southcarolinamedicareagency.com" class="nav-link" target="_blank">Medicare Site</a></li>
           <li><a href="https://www.mauldininsurancegroup.com" class="nav-link" target="_blank">MIG Website</a></li>
+          <li><a href="https://www.midlandsmedicare.com" class="nav-link" target="_blank" style="color:#e0b93a;">Midlands Medicare →</a></li>
           <li><a href="tel:8039208827" class="nav-link nav-phone">803-920-8827</a></li>
           <li><a href="https://www.mauldininsurancegroup.com/contact" class="nav-link nav-cta">Free Quote</a></li>
         </ul>
