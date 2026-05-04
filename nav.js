@@ -22,6 +22,8 @@ document.addEventListener('DOMContentLoaded', function () {
               <li><a href="/home-insurance-south-carolina">🏠 Home Insurance</a></li>
               <li><a href="/homeowners-insurance-lexington-sc">📍 Homeowners — Lexington SC</a></li>
               <li><a href="/new-to-lexington-sc-insurance">🏡 New to Lexington SC</a></li>
+              <li><a href="/new-homeowners-lexington-sc">🔑 New Homeowners — Lexington</a></li>
+              <li><a href="/bundle-home-auto-insurance-sc">💰 Bundle Home + Auto</a></li>
               <li><a href="/home-insurance-rate-increase-sc">📈 Rate Increase? Shop & Save</a></li>
               <li><a href="/renters-insurance-south-carolina">🏘️ Renters Insurance</a></li>
               <li><a href="/renters-insurance-lexington-sc">📍 Renters — Lexington SC</a></li>
@@ -39,7 +41,16 @@ document.addEventListener('DOMContentLoaded', function () {
               <li><a href="/home-office-insurance-sc">💻 Home Office Insurance</a></li>
             </ul>
           </li>
-          <li><a href="/service-areas" class="nav-link">Service Areas</a></li>
+          <li class="nav-dropdown">
+            <button class="nav-link nav-drop-btn">Service Areas <span class="nav-arrow">&#9662;</span></button>
+            <ul class="nav-submenu">
+              <li><a href="/homeowners-insurance-lexington-sc">📍 Lexington, SC</a></li>
+              <li><a href="/insurance-columbia-sc">📍 Columbia, SC</a></li>
+              <li><a href="/insurance-chapin-lake-murray-sc">📍 Chapin &amp; Lake Murray</a></li>
+              <li><a href="/insurance-cayce-west-columbia-sc">📍 Cayce &amp; West Columbia</a></li>
+              <li><a href="/service-areas">🗺️ All Service Areas</a></li>
+            </ul>
+          </li>
           <li><a href="https://www.southcarolinamedicareagency.com" class="nav-link" target="_blank">Medicare Site</a></li>
           <li><a href="https://www.mauldininsurancegroup.com" class="nav-link" target="_blank">MIG Website</a></li>
           <li><a href="https://www.midlandsmedicare.com" class="nav-link" target="_blank" style="color:#e0b93a;">Midlands Medicare →</a></li>
@@ -90,14 +101,12 @@ document.addEventListener('DOMContentLoaded', function () {
   const placeholder = document.getElementById('nav-placeholder');
   if (placeholder) placeholder.outerHTML = navHTML;
 
-  // Mobile hamburger
   const hamburger = document.getElementById('nav-hamburger');
   const navLinks = document.getElementById('nav-links');
   if (hamburger && navLinks) {
     hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
   }
 
-  // Mobile dropdowns
   document.querySelectorAll('.nav-drop-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const li = btn.closest('li');

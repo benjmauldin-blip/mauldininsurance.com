@@ -39,6 +39,8 @@ document.addEventListener('DOMContentLoaded', function () {
             <li><a href="/home-insurance-south-carolina">Home Insurance</a></li>
             <li><a href="/homeowners-insurance-lexington-sc">Homeowners — Lexington SC</a></li>
             <li><a href="/new-to-lexington-sc-insurance">New to Lexington SC</a></li>
+            <li><a href="/new-homeowners-lexington-sc">New Homeowners — Lexington</a></li>
+            <li><a href="/bundle-home-auto-insurance-sc">Bundle Home + Auto</a></li>
             <li><a href="/home-insurance-rate-increase-sc">Rate Increase? Shop &amp; Save</a></li>
             <li><a href="/renters-insurance-south-carolina">Renters Insurance</a></li>
             <li><a href="/landlord-insurance-south-carolina">Landlord Insurance</a></li>
@@ -48,6 +50,9 @@ document.addEventListener('DOMContentLoaded', function () {
             <li><a href="/waterfront-home-insurance-lake-murray-sc">Waterfront Home — Lake Murray</a></li>
             <li><a href="/business-insurance-south-carolina">Business Insurance</a></li>
             <li><a href="/life-insurance-south-carolina">Life Insurance</a></li>
+            <li><a href="/insurance-columbia-sc">Insurance — Columbia SC</a></li>
+            <li><a href="/insurance-chapin-lake-murray-sc">Insurance — Chapin / Lake Murray</a></li>
+            <li><a href="/insurance-cayce-west-columbia-sc">Insurance — Cayce / W. Columbia</a></li>
             <li><a href="/service-areas">🗺️ All Service Areas</a></li>
           </ul>
         </div>
