@@ -15,113 +15,133 @@
   <meta name="theme-color" content="#1a2e5a">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": ["InsuranceAgency", "LocalBusiness"],
-    "@id": "https://www.mauldininsurance.com/#organization",
-    "name": "Mauldin Insurance Group",
-    "makesOffer": [
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Auto Insurance", "serviceType": "Personal Auto Insurance"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Home Insurance", "serviceType": "Homeowners Insurance"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Renters Insurance", "serviceType": "Renters Insurance"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Business Insurance", "serviceType": "Commercial Insurance"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Life Insurance", "serviceType": "Life Insurance"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Landlord Insurance", "serviceType": "Landlord Dwelling Fire Insurance"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Boat Insurance", "serviceType": "Watercraft Insurance"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Final Expense Insurance", "serviceType": "Final Expense Insurance"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Auto & Home Bundle", "serviceType": "Multi-Policy Insurance"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Commercial Auto Insurance", "serviceType": "Commercial Auto Insurance"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Umbrella Insurance", "serviceType": "Umbrella Liability Insurance"}},
-      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Medicare Insurance", "serviceType": "Medicare Insurance"}}
-    ]
-  }
-  </script>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": ["InsuranceAgency", "LocalBusiness"],
-    "@id": "https://www.mauldininsurance.com/#organization",
-    "name": "Mauldin Insurance Group",
-    "url": "https://www.mauldininsurance.com",
-    "logo": "https://irp.cdn-website.com/ed566c5d/dms3rep/multi/favicon.png",
-    "description": "Independent insurance agency in Lexington SC specializing in auto, home, life, renters, landlord, boat, and business insurance for South Carolina families and businesses.",
-    "founder": [
-      {"@type": "Person", "name": "Jennifer Mauldin"},
-      {"@type": "Person", "name": "Benjamin Mauldin"}
-    ],
-    "foundingDate": "2021",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "131",
-      "bestRating": "5",
-      "worstRating": "1"
+{
+  "@context": "https://schema.org",
+  "@type": "InsuranceAgency",
+  "@id": "https://www.mauldininsurance.com/#organization",
+  "name": "Mauldin Insurance Group",
+  "makesOffer": [
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Auto Insurance", "serviceType": "Personal Auto Insurance"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Home Insurance", "serviceType": "Homeowners Insurance"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Renters Insurance", "serviceType": "Renters Insurance"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Business Insurance", "serviceType": "Commercial Insurance"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Life Insurance", "serviceType": "Life Insurance"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Landlord Insurance", "serviceType": "Landlord Dwelling Fire Insurance"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Boat Insurance", "serviceType": "Watercraft Insurance"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Final Expense Insurance", "serviceType": "Final Expense Insurance"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Auto & Home Bundle", "serviceType": "Bundled Auto and Home Insurance"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Commercial Auto Insurance", "serviceType": "Commercial Auto Insurance"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Umbrella Insurance", "serviceType": "Umbrella Liability Insurance"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Medicare Insurance", "serviceType": "Medicare Insurance"}}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "InsuranceAgency",
+  "@id": "https://www.mauldininsurance.com/#organization",
+  "name": "Mauldin Insurance Group",
+  "url": "https://www.mauldininsurance.com",
+  "logo": "https://irp.cdn-website.com/ed566c5d/dms3rep/multi/favicon.png",
+  "description": "Independent insurance agency in Lexington SC specializing in auto, home, life, renters, landlord, boat, and business insurance for South Carolina families and businesses.",
+  "founder": [
+    {"@type": "Person", "@id": "https://www.mauldininsurancegroup.com/#jennifer", "name": "Jennifer Mauldin"},
+    {"@type": "Person", "@id": "https://www.mauldininsurancegroup.com/#ben", "name": "Benjamin Mauldin"}
+  ],
+  "foundingDate": "2021",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "131",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "100 Old Cherokee Rd Ste F #167",
+    "addressLocality": "Lexington",
+    "addressRegion": "SC",
+    "postalCode": "29072",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.0033,
+    "longitude": -81.1957
+  },
+  "telephone": "+1-803-920-8827",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    }
+  ],
+  "priceRange": "$$",
+  "areaServed": [
+    {"@type": "State", "name": "South Carolina"},
+    {"@type": "State", "name": "North Carolina"},
+    {"@type": "State", "name": "Georgia"}
+  ],
+  "sameAs": [
+    "https://www.google.com/maps?cid=14600299182979997294",
+    "https://www.facebook.com/mauldininsurancegroup",
+    "https://www.mauldininsurancegroup.com",
+    "https://www.southcarolinamedicareagency.com",
+    "https://www.midlandsmedicare.com",
+    "https://www.linkedin.com/in/ben-mauldin/",
+    "https://www.linkedin.com/in/jennifer-williams-mauldin-58133029/"
+  ],
+  "parentOrganization": {"@id": "https://www.mauldininsurancegroup.com/#organization"}
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Mauldin Insurance",
+  "@id": "https://www.mauldininsurance.com/#website",
+  "url": "https://www.mauldininsurance.com",
+  "description": "Independent insurance agency in Lexington SC for auto, home, life, renters, landlord, boat, and business insurance across South Carolina, North Carolina, and Georgia.",
+  "publisher": {"@id": "https://www.mauldininsurance.com/#organization"},
+  "inLanguage": "en"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://www.mauldininsurancegroup.com/#ben",
+      "name": "Ben Mauldin",
+      "jobTitle": "Independent Insurance Agent",
+      "worksFor": {"@id": "https://www.mauldininsurancegroup.com/#organization"},
+      "telephone": "+1-803-920-8827",
+      "email": "ben@mauldininsurancegroup.com",
+      "url": "https://www.mauldininsurancegroup.com/about",
+      "sameAs": ["https://www.linkedin.com/in/ben-mauldin/"]
     },
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "100 Old Cherokee Rd Ste F #167",
-      "addressLocality": "Lexington",
-      "addressRegion": "SC",
-      "postalCode": "29072",
-      "addressCountry": "US"
-    },
-    "geo": {"@type": "GeoCoordinates", "latitude": 34.0033, "longitude": -81.1957},
-    "telephone": "+1-803-920-8827",
-    "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "17:00"}],
-    "priceRange": "$$",
-    "areaServed": [
-      {"@type": "State", "name": "South Carolina"},
-      {"@type": "State", "name": "North Carolina"},
-      {"@type": "State", "name": "Georgia"}
-    ],
-    "sameAs": [
-      "https://www.google.com/maps?cid=14600299182979997294",
-      "https://www.facebook.com/mauldininsurancegroup",
-      "https://www.mauldininsurancegroup.com",
-      "https://www.southcarolinamedicareagency.com",
-      "https://www.midlandsmedicare.com"
-    ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Mauldin Insurance",
-    "@id": "https://www.mauldininsurance.com/#website",
-    "url": "https://www.mauldininsurance.com",
-    "description": "Independent insurance agency in Lexington SC for auto, home, life, renters, landlord, boat, and business insurance across South Carolina, North Carolina, and Georgia.",
-    "publisher": {"@id": "https://www.mauldininsurance.com/#organization"},
-    "inLanguage": "en"
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Person",
-        "name": "Ben Mauldin",
-        "jobTitle": "Independent Insurance Agent",
-        "worksFor": {"@id": "https://www.mauldininsurance.com/#organization"},
-        "telephone": "+1-803-920-8827",
-        "email": "ben@mauldininsurancegroup.com",
-        "url": "https://www.mauldininsurancegroup.com/about",
-        "sameAs": ["https://www.linkedin.com/in/ben-mauldin/"]
-      },
-      {
-        "@type": "Person",
-        "name": "Jennifer Mauldin",
-        "jobTitle": "Medicare & Health Insurance Specialist",
-        "worksFor": {"@id": "https://www.mauldininsurance.com/#organization"},
-        "telephone": "+1-843-509-2462",
-        "email": "jennifer@mauldininsurancegroup.com",
-        "url": "https://www.mauldininsurancegroup.com/about",
-        "sameAs": ["https://www.linkedin.com/in/jennifer-williams-mauldin-58133029/"]
-      }
-    ]
-  }
-  </script>
+    {
+      "@type": "Person",
+      "@id": "https://www.mauldininsurancegroup.com/#jennifer",
+      "name": "Jennifer Mauldin",
+      "jobTitle": "Medicare & Health Insurance Specialist",
+      "worksFor": {"@id": "https://www.mauldininsurancegroup.com/#organization"},
+      "telephone": "+1-843-509-2462",
+      "email": "jennifer@mauldininsurancegroup.com",
+      "url": "https://www.mauldininsurancegroup.com/about",
+      "sameAs": ["https://www.linkedin.com/in/jennifer-williams-mauldin-58133029/"]
+    }
+  ]
+}
+</script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is property and casualty insurance?","acceptedAnswer":{"@type":"Answer","text":"Property and casualty (P&C) insurance is a category of coverage that protects you from financial loss in two ways: property insurance covers damage to your physical assets like your home, vehicle, business property, or boat; casualty insurance protects you from liability if you are legally responsible for injury or damage to another person. Together, P&C insurance forms the foundation of personal and business financial protection in South Carolina."}},{"@type":"Question","name":"What is the minimum auto insurance required in South Carolina?","acceptedAnswer":{"@type":"Answer","text":"South Carolina requires drivers to carry minimum liability coverage of 25/50/25 \u2014 that is, $25,000 bodily injury per person, $50,000 bodily injury per accident, and $25,000 property damage per accident. South Carolina also requires uninsured motorist coverage at the same 25/50/25 minimums. These are state minimums; most drivers carry higher limits because at-fault accident costs frequently exceed minimum coverage."}},{"@type":"Question","name":"What does it mean to be an independent insurance agent?","acceptedAnswer":{"@type":"Answer","text":"An independent agent like Mauldin Insurance Group is not employed by any single insurance company. We represent multiple carriers, which means we compare options across several insurers to find you the best combination of coverage and price. A captive agent \u2014 like a State Farm or Allstate agent \u2014 can only offer products from their one company. Independent agents typically provide more options and a more objective recommendation."}},{"@type":"Question","name":"Does it cost more to use an independent agent in SC?","acceptedAnswer":{"@type":"Answer","text":"No. Our services are completely free to you. Insurance carriers pay agents a commission when you purchase a policy. Your premium is the same whether you buy through us or go directly to the carrier. The difference is that an independent agent does the shopping, comparison, and ongoing service work for you at no charge."}},{"@type":"Question","name":"Why are South Carolina home insurance rates rising in 2026?","acceptedAnswer":{"@type":"Answer","text":"South Carolina home insurance premiums have increased 25 to 40 percent since 2022 due to several factors: a sharp rise in construction and rebuild costs, increased frequency of severe weather events, carrier reinsurance cost increases, and large losses from hurricanes affecting the broader Southeast market. Many homeowners are also underinsured because their dwelling coverage limit has not kept up with current rebuild costs."}},{"@type":"Question","name":"Do I need flood insurance in South Carolina?","acceptedAnswer":{"@type":"Answer","text":"Standard homeowners insurance does not cover flood damage in South Carolina. If you live in a high-risk flood zone or in waterfront communities like Lake Murray, separate flood insurance through the National Flood Insurance Program (NFIP) or a private flood carrier is essential. We can help you assess your flood risk and find appropriate coverage."}},{"@type":"Question","name":"What is the difference between homeowners and landlord insurance?","acceptedAnswer":{"@type":"Answer","text":"Homeowners insurance is written for owner-occupied properties and covers the dwelling, personal belongings, liability, and loss of use. Landlord insurance \u2014 also called a dwelling fire policy or DP-3 \u2014 is specifically designed for non-owner-occupied rental properties and covers the dwelling, liability for tenant injuries, and loss of rental income. Renting your home on a standard homeowners policy can void coverage and result in denied claims."}},{"@type":"Question","name":"What is general liability insurance for a South Carolina business?","acceptedAnswer":{"@type":"Answer","text":"General liability insurance protects South Carolina businesses from third-party claims involving bodily injury, property damage, and personal injury such as libel or slander. It also covers legal defense costs, even if the claim is unfounded. Most SC small businesses bundle general liability with commercial property coverage in a Business Owners Policy (BOP), which is more cost-effective than buying each separately."}},{"@type":"Question","name":"Do I need boat insurance on Lake Murray?","acceptedAnswer":{"@type":"Answer","text":"South Carolina does not legally require boat insurance, but most Lake Murray marinas require liability coverage for slip rental. More importantly, Lake Murray is one of the most heavily trafficked recreational lakes in the Southeast on summer weekends. Operating without coverage means you are personally liable for any accident you cause \u2014 and modern boat replacement costs frequently exceed $30,000."}},{"@type":"Question","name":"Can I bundle home and auto insurance in SC?","acceptedAnswer":{"@type":"Answer","text":"Yes \u2014 and bundling is one of the most reliable ways to save on insurance in South Carolina. Most major carriers offer 10 to 25 percent multi-policy discounts when you combine auto and home insurance. As an independent agent we shop the bundle across multiple carriers because the lowest standalone auto and the lowest standalone home rarely come from the same insurer."}},{"@type":"Question","name":"How do I switch insurance agents in South Carolina?","acceptedAnswer":{"@type":"Answer","text":"Switching insurance agents in SC is straightforward and can be done at any time without penalty. We handle all paperwork, contact your current carrier on your behalf, and coordinate the transition so there is no gap in coverage. Most agent switches are completed within a few business days. There is no cost to switch and no penalty from your current carrier."}}]}
   </script>
