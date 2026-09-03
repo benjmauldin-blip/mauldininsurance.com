@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
           <p class="footer-address">📍 100 Old Cherokee Rd Ste F #167, Lexington, SC 29072</p>
           <div class="footer-rating">
             <span>⭐⭐⭐⭐⭐</span>
-            <span>5.0 rating · 131 Google reviews</span>
+            <span>5.0 rating · 151 Google reviews</span>
           </div>
         </div>
         <div class="footer-contact">
