@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
             </div>
           </div>
           <p class="footer-tagline">Independent insurance agent serving all of South Carolina, North Carolina, and Georgia. Based in Lexington, SC. We shop multiple carriers to find your best coverage — at no cost to you.</p>
-          <p class="footer-address">📍 100 Old Cherokee Rd Ste F #167, Lexington, SC 29072</p>
+          <p class="footer-address">📍 100 Old Cherokee Rd Ste F, Lexington, SC 29072</p>
           <div class="footer-rating">
             <span>⭐⭐⭐⭐⭐</span>
             <span>5.0 rating · 151 Google reviews</span>
