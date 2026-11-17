@@ -1,16 +1,16 @@
 
 /* Layout: same family as the Medicare tool sites. Sticky navy bar, one calm column per tool, results in a gold-edged answer box. */
 :root{
-  --navy:#1a2e5a; --gold:#c9a227; --teal:#0e7490; --ink:#1f2933; --muted:#566373; --line:#d8e2ea;
-  --paper:#ffffff; --soft:#f0f5f8; --goldsoft:#fbf3d9; --bg:#f6f8fa; --fg:#1f2933; --onnavy:#ffffff;
+  --navy:#0c1a2e; --gold:#d4a52a; --teal:#2f5d50; --ink:#14202f; --muted:#55636f; --line:#dfe5e8;
+  --paper:#ffffff; --soft:#eef1ee; --goldsoft:#fbf3d9; --bg:#f5f6f2; --fg:#14202f; --onnavy:#ffffff;
   --good:#1f7a4d; --warn:#9a5b00; --bad:#b42318;
-  --display:"Playfair Display", Georgia, serif; --body:"Source Sans 3","Segoe UI",Roboto,Arial,sans-serif;
+  --display:"Bricolage Grotesque","Source Sans 3",system-ui,sans-serif; --body:"Source Sans 3","Segoe UI",Roboto,Arial,sans-serif;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --navy:#9db7e6; --gold:#e2bd47; --teal:#4cb6cf; --ink:#e6ecf2; --muted:#a3b1c0; --line:#2b3a4c; --paper:#162130; --soft:#1b2838; --goldsoft:#3a3216; --bg:#0f1722; --fg:#e6ecf2; --onnavy:#0f1722;
+  --navy:#e8edf1; --gold:#e8bf4a; --teal:#6fb39d; --ink:#e6ecf2; --muted:#a3b1c0; --line:#2b3a4c; --paper:#162130; --soft:#1b2838; --goldsoft:#3a3216; --bg:#0f1722; --fg:#e6ecf2; --onnavy:#0f1722;
   --good:#5cc08c; --warn:#f0a94a; --bad:#ff8a80; color-scheme:dark}}
 :root[data-theme="dark"]{
-  --navy:#9db7e6; --gold:#e2bd47; --teal:#4cb6cf; --ink:#e6ecf2; --muted:#a3b1c0; --line:#2b3a4c; --paper:#162130; --soft:#1b2838; --goldsoft:#3a3216; --bg:#0f1722; --fg:#e6ecf2; --onnavy:#0f1722;
+  --navy:#e8edf1; --gold:#e8bf4a; --teal:#6fb39d; --ink:#e6ecf2; --muted:#a3b1c0; --line:#2b3a4c; --paper:#162130; --soft:#1b2838; --goldsoft:#3a3216; --bg:#0f1722; --fg:#e6ecf2; --onnavy:#0f1722;
   --good:#5cc08c; --warn:#f0a94a; --bad:#ff8a80; color-scheme:dark}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:18px;line-height:1.6}
@@ -50,7 +50,7 @@ label{display:block;font-weight:700;margin-bottom:6px}
 .seg button[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:var(--paper)}
 button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
 .answer{margin-top:20px;background:var(--goldsoft);border:1px solid var(--gold);border-radius:14px;padding:20px}
-.answer .big{font-family:var(--display);font-size:clamp(30px,6vw,44px);color:var(--navy);line-height:1.1;font-variant-numeric:tabular-nums}
+.answer .big{font-family:var(--display);font-weight:700;letter-spacing:-.03em;font-size:clamp(30px,6vw,44px);color:var(--navy);line-height:1.1;font-variant-numeric:tabular-nums}
 .answer p{margin:8px 0 0}
 .compare{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:16px}
 .compare div{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
@@ -95,3 +95,30 @@ th{color:var(--muted);font-weight:700;font-size:14px;text-transform:uppercase;le
 .foot h4{font-family:var(--body);font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin:0 0 8px}
 .foot p{margin:0 0 6px;opacity:.9}
 @media print{.bar,.foot,.cta,.noprint{display:none!important}body{background:#fff}}
+
+/* Version 2 skin (Nov 2026): floating pill nav, grotesque headings, rounder cards */
+h1,h2,h3{letter-spacing:-.02em}
+h1{font-weight:700;letter-spacing:-.035em;line-height:1.02}
+.eyebrow{text-transform:none;letter-spacing:0;font-size:15px}
+.card,.tool,.answer,.cta{border-radius:22px}
+.btn{border-radius:999px;color:#0c1a2e}
+.skip{position:absolute;left:-9999px;top:0;background:var(--gold);color:#0c1a2e;padding:8px 14px;font-weight:700;z-index:60}
+.skip:focus{left:12px;top:12px}
+.pillnav{position:sticky;top:12px;z-index:30;margin:12px auto 0;max-width:1200px;padding-inline:max(12px,env(safe-area-inset-left,0px))}
+.pillnav .in{display:flex;align-items:center;gap:14px;background:rgba(12,26,46,.88);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);border:1px solid rgba(255,255,255,.1);border-radius:999px;padding:8px 8px 8px 14px;color:#fff}
+.pillnav .logo{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-family:"Bricolage Grotesque","Source Sans 3",system-ui,sans-serif;font-weight:700;font-size:18px;margin-right:auto;letter-spacing:-.01em}
+.pillnav .logo img{width:40px;height:40px;border-radius:50%;object-fit:cover;background:#fff}
+.pillnav nav{display:flex;gap:4px}
+.pillnav nav a{color:rgba(255,255,255,.82);text-decoration:none;font-size:15px;font-weight:600;padding:8px 12px;border-radius:999px}
+.pillnav nav a:hover{background:rgba(255,255,255,.08);color:#fff}
+.pillnav .call{color:#e8bf4a;text-decoration:none;font-weight:700;font-size:15px;padding:8px 10px;white-space:nowrap}
+.pillnav .quote{background:#d4a52a;color:#0c1a2e;text-decoration:none;font-weight:700;font-size:15px;padding:10px 18px;border-radius:999px;white-space:nowrap}
+.pillnav .quote:hover{background:#e8bf4a}
+@media (max-width:900px){.pillnav nav{display:none}}
+@media (max-width:520px){.pillnav .call{display:none}.pillnav .logo span{font-size:16px}}
+.foot{background:#0c1a2e;color:#fff}
+.foot a{color:#fff}
+.foot h4{color:#e8bf4a}
+.cta{background:#0c1a2e;color:#fff}
+.cta h3{color:#fff}
+@media print{.pillnav{display:none!important}}
