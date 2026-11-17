@@ -88,7 +88,7 @@ body.v2{background:linear-gradient(var(--night) 0 240px,var(--paper) 240px);colo
 
 /* Ben */
 .ben{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:48px;align-items:center}
-.ben .photo{aspect-ratio:4/5;border-radius:28px;background:linear-gradient(160deg,var(--marsh),var(--night));display:grid;place-items:center;color:var(--palmhi);font-family:var(--disp);font-size:120px;font-weight:700;letter-spacing:-.04em}
+.ben .photo{aspect-ratio:4/5;border-radius:28px;overflow:hidden;background:linear-gradient(160deg,var(--marsh),var(--night));display:grid;place-items:center;color:var(--palmhi);font-family:var(--disp);font-size:120px;font-weight:700;letter-spacing:-.04em}
 .ben blockquote{margin:0 0 22px;font-family:var(--disp);font-size:clamp(26px,3.4vw,40px);line-height:1.12;letter-spacing:-.02em;font-weight:600}
 .ben p{color:var(--muted2);margin:0 0 14px;max-width:56ch}
 .ben .acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
@@ -96,7 +96,8 @@ body.v2{background:linear-gradient(var(--night) 0 240px,var(--paper) 240px);colo
 .pbtn:hover{background:var(--marsh)}
 .pbtn.alt{background:transparent;color:var(--ink);border:1.5px solid var(--mist)}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .pbtn{background:var(--palm);color:var(--night)}}
-@media (max-width:760px){.ben{grid-template-columns:1fr;gap:24px}.ben .photo{aspect-ratio:16/9;font-size:84px}}
+.ben .photo img{width:100%;height:100%;object-fit:cover;display:block}
+@media (max-width:760px){.ben{grid-template-columns:1fr;gap:24px}.ben .photo{max-width:360px}}
 
 /* Insure tabs */
 .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
